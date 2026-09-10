@@ -165,5 +165,60 @@ window.PRODUCTS = {
       'Lead Time': '30–45 days'
     },
     keywords: 'YFY200GY-12, 200cc dirt bike, dirt bike wholesale, dirt bike manufacturer China, off-road motorcycle 200cc, enduro motorcycle supplier, Brazil dirt bike, Africa dirt bike importer, OEM dirt bike, MOQ 30 dirt bike, 4 stroke dirt bike, air cooled dirt bike, 5 speed dirt bike, 14L fuel tank dirt bike'
-  }
+  },
+    /* ---------------- YFY200GY-11 Dirt Bike (老款) ---------------- */
+  'yfy200-11': {
+    id: 'yfy200-11',
+    name: 'YFY200GY-11 Dirt Bike',
+    category: 'dirt bike',
+    icon: 'fa-motorcycle',
+    image: 'assets/images/yfy200-11-main.jpg',
+    gallery: [
+      'assets/images/yfy200-11-1.jpg',
+      'assets/images/yfy200-11-2.jpg',
+      'assets/images/yfy200-11-3.jpg'
+    ],
+    description: 'The YFY200GY-11 is a classic 200cc air-cooled 4-stroke dirt bike with a proven platform, ideal for budget-conscious importers in Brazil, Africa, Latin America and the Middle East. Featuring a 5-speed manual gearbox, CDI ignition, electric/kick start and a 14L fuel tank, this 2013-model bike offers unbeatable value for wholesale buyers. MOQ 30 units — OEM and ODM welcome.',
+    highlights: [
+      'Proven 200cc 4-stroke air-cooled engine (150cc / 250cc optional)',
+      '10KW / 7500rpm max power, 14.0N.m / 6500rpm max torque',
+      'International 5-speed manual gearbox',
+      'Electric / kick start + CDI ignition',
+      '14L large fuel tank — long range for daily use',
+      'Front disc + rear drum brake, 300mm ground clearance',
+      'Max speed >100km/h, loading capacity 150kg',
+      'Classic 2013 model — best cost-performance for bulk orders',
+      'MOQ 30 units — perfect for Brazil, Nigeria, Peru, UAE, Algeria importers'
+    ],
+    specs: {
+      'Model': 'YFY200GY-11',
+      'Engine Type': '4 stroke, single cylinder, air cooling',
+      'Displacement': '200cc (150cc / 250cc optional)',
+      'Max. Power': '10KW / 7500r/min',
+      'Max. Torque': '14.0N.m / 6500r/min',
+      'Cooling Type': 'Air cooling',
+      'Fuel Delivery': 'Carburetor',
+      'Start Method': 'Electric / kick',
+      'Clutch': 'Manual',
+      'Gear': 'International 5 gears',
+      'Ignition Method': 'CDI',
+      'Max. Speed': '>100 km/h',
+      'L*W*H': '2075 × 870 × 1180 mm',
+      'Wheel Base': '1360 mm',
+      'Seat Height': '900 mm',
+      'Vehicle Weight': '120 kg',
+      'Max. Loading': '150 kg',
+      'Front / Rear Brake': 'Disk / drum',
+      'Fuel Tank Volume': '14 L',
+      'Front / Rear Tyre': 'Front 90/90-19, Rear 110/90-17',
+      'Min. Ground Clearance': '300 mm',
+      'Battery': '12V 6.5A',
+      'MOQ': '30 units',
+      'Packing Term': 'Standard exporting packaging',
+      'Shipping': 'By sea',
+      'Delivery Time': 'Within 30–45 days after prepayment',
+      'Lead Time': '30–45 days'
+    },
+    keywords: 'YFY200GY-11, 200cc dirt bike, cheap 200cc dirt bike, dirt bike wholesale, dirt bike manufacturer China, off-road motorcycle 200cc, enduro motorcycle supplier, Brazil dirt bike, Africa dirt bike importer, OEM dirt bike, MOQ 30 dirt bike, 4 stroke dirt bike, air cooled dirt bike, 5 speed dirt bike, 14L fuel tank dirt bike, classic dirt bike, 2013 model dirt bike'
+  },
 };
