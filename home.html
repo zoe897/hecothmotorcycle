@@ -6,7 +6,7 @@
   <title>HECOTH · B2B Electric & Fuel Motorcycles, OEM Parts</title>
   <meta name="description" content="HECOTH B2B electric & fuel motorcycles, OEM parts. Global supplier for fleet & dealers. ISO 9001 certified." />
   <meta name="keywords" content="electric motorcycle, fuel motorcycle, motorcycle parts, B2B supplier, OEM, wholesale, powersports" />
-  <link rel="canonical" href="https://YOUR_USERNAME.github.io/hecoth-b2b/home.html" />
+  <link rel="canonical" href="https://hecothmotorcycle.vercel.app/home.html" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -16,7 +16,7 @@
 <nav id="site-nav" class="floating-nav"></nav>
 
 <main class="page-wrap">
-  <!-- Hero -->
+  <!-- ================= Hero ================= -->
   <div class="hero-grad border border-white/5">
     <div class="grid md:grid-cols-2 gap-10 items-center">
       <div>
@@ -31,57 +31,246 @@
           Heavy-duty electric & combustion motorcycles...
         </p>
         <div class="flex flex-wrap gap-4 mt-8">
-          <a href="products.html" class="btn-primary"><i class="fas fa-chevron-circle-right mr-2"></i> <span data-i18n="hero.btn1">Explore catalog</span></a>
-          <a href="contact.html" class="btn-secondary"><i class="fas fa-envelope mr-2"></i> <span data-i18n="hero.btn2">Get quote</span></a>
+          <a href="products.html" class="btn-primary">
+            <i class="fas fa-chevron-circle-right mr-2"></i>
+            <span data-i18n="hero.btn1">Explore catalog</span>
+          </a>
+          <a href="contact.html" class="btn-secondary">
+            <i class="fas fa-envelope mr-2"></i>
+            <span data-i18n="hero.btn2">Get quote</span>
+          </a>
         </div>
         <div class="flex flex-wrap gap-3 mt-8 text-xs text-gray-400">
-          <span>#electric motorcycle</span><span>#fuel moto parts</span><span>#B2B supplier</span><span>#OEM manufacturer</span>
+          <span>#electric motorcycle</span>
+          <span>#fuel moto parts</span>
+          <span>#B2B supplier</span>
+          <span>#OEM manufacturer</span>
         </div>
       </div>
-      <div class="flex justify-center">
-        <div class="w-full max-w-sm aspect-square rounded-3xl bg-gradient-to-br from-gold/20 to-gray-800/50 border border-white/10 overflow-hidden">
-           <img src="assets/images/motorcycle.jpg"
-             alt="HECOTH B2B electric and fuel motorcycle wholesale supplier"
-             class="w-full h-full object-cover"
-             onerror="this.onerror=null; this.src='assets/images/placeholder.svg';" />
-       </div>
-      </div>
 
-  <!-- Categories -->
-  <div class="mt-16">
-    <h2 class="text-3xl font-bold mb-8"><span class="text-gold" data-i18n="home.categories">Categories</span></h2>
-    <div class="grid sm:grid-cols-3 gap-6">
-      <div class="product-card">
-        <div class="text-3xl text-gold"><i class="fas fa-charging-station"></i></div>
-        <h3 class="text-xl font-bold mt-2" data-i18n="home.cat1">E-Moto</h3>
-        <p class="text-sm text-gray-400 mt-1" data-i18n="home.cat1desc">12kW · 72V · 140km</p>
-        <a href="product-detail.html?id=e4" class="text-gold text-sm mt-3 inline-block">
-          <i class="fas fa-arrow-right"></i> <span data-i18n="common.details">Details</span>
-        </a>
-      </div>
-      <div class="product-card">
-        <div class="text-3xl text-gold"><i class="fas fa-gas-pump"></i></div>
-        <h3 class="text-xl font-bold mt-2" data-i18n="home.cat2">Fuel Moto</h3>
-        <p class="text-sm text-gray-400 mt-1" data-i18n="home.cat2desc">450cc · 38HP</p>
-        <a href="product-detail.html?id=f450" class="text-gold text-sm mt-3 inline-block">
-          <i class="fas fa-arrow-right"></i> <span data-i18n="common.details">Details</span>
-        </a>
-      </div>
-      <div class="product-card">
-        <div class="text-3xl text-gold"><i class="fas fa-cogs"></i></div>
-        <h3 class="text-xl font-bold mt-2" data-i18n="home.cat3">Parts</h3>
-        <p class="text-sm text-gray-400 mt-1" data-i18n="home.cat3desc">200+ SKU</p>
-        <a href="product-detail.html?id=parts" class="text-gold text-sm mt-3 inline-block">
-          <i class="fas fa-arrow-right"></i> <span data-i18n="common.details">Details</span>
-        </a>
+      <!-- ===== 右侧 3 张图片循环轮播 ===== -->
+      <div class="flex justify-center">
+        <div class="w-full max-w-sm aspect-square rounded-3xl bg-gradient-to-br from-gold/20 to-gray-800/50 border border-white/10 overflow-hidden relative"
+             id="heroSlider">
+          <img src="assets/images/motorcycle.jpg"
+               alt="HECOTH B2B motorcycle wholesale supplier"
+               class="hero-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700"
+               onerror="this.onerror=null; this.src='assets/images/placeholder.svg';" />
+          <img src="assets/images/motorcycle-2.jpg"
+               alt="HECOTH electric motorcycle B2B export"
+               class="hero-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700"
+               onerror="this.onerror=null; this.src='assets/images/placeholder.svg';" />
+          <img src="assets/images/motorcycle-4.jpg"
+               alt="HECOTH fuel motorcycle factory wholesale"
+               class="hero-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700"
+               onerror="this.onerror=null; this.src='assets/images/placeholder.svg';" />
+
+          <!-- 轮播指示点 -->
+          <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+            <span class="hero-dot w-2 h-2 rounded-full bg-gold cursor-pointer"></span>
+            <span class="hero-dot w-2 h-2 rounded-full bg-white/40 cursor-pointer"></span>
+            <span class="hero-dot w-2 h-2 rounded-full bg-white/40 cursor-pointer"></span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
+  <!-- ================= Categories ================= -->
+  <div class="mt-16">
+    <h2 class="text-3xl font-bold mb-8">
+      <span class="text-gold" data-i18n="home.categories">Categories</span>
+    </h2>
+
+    <div class="grid sm:grid-cols-3 gap-6">
+
+      <!-- ===== E-Moto ===== -->
+      <div class="product-card p-0 overflow-hidden">
+        <div class="relative h-48 overflow-hidden">
+          <img src="assets/images/cat-emoto.jpg"
+               alt="Electric motorcycle B2B wholesale - E-Moto category"
+               class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+               loading="lazy"
+               onerror="this.onerror=null; this.src='assets/images/placeholder.svg';" />
+          <div class="absolute top-3 left-3 bg-gold text-black text-xs font-bold px-3 py-1 rounded-full">
+            <i class="fas fa-charging-station mr-1"></i> E-Moto
+          </div>
+        </div>
+        <div class="p-5">
+          <h3 class="text-xl font-bold" data-i18n="home.cat1">E-Moto</h3>
+          <p class="text-sm text-gray-400 mt-1" data-i18n="home.cat1desc">12kW · 72V · 140km range</p>
+          <a href="product-detail.html?id=e4" class="text-gold text-sm mt-3 inline-block">
+            <i class="fas fa-arrow-right"></i> <span data-i18n="common.details">Details</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- ===== Fuel Moto ===== -->
+      <div class="product-card p-0 overflow-hidden">
+        <div class="relative h-48 overflow-hidden">
+          <img src="assets/images/cat-fuel.jpg"
+               alt="Fuel motorcycle B2B wholesale - Fuel Moto category"
+               class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+               loading="lazy"
+               onerror="this.onerror=null; this.src='assets/images/placeholder.svg';" />
+          <div class="absolute top-3 left-3 bg-gold text-black text-xs font-bold px-3 py-1 rounded-full">
+            <i class="fas fa-gas-pump mr-1"></i> Fuel
+          </div>
+        </div>
+        <div class="p-5">
+          <h3 class="text-xl font-bold" data-i18n="home.cat2">Fuel Moto</h3>
+          <p class="text-sm text-gray-400 mt-1" data-i18n="home.cat2desc">450cc · 38HP · 165kg</p>
+          <a href="product-detail.html?id=f450" class="text-gold text-sm mt-3 inline-block">
+            <i class="fas fa-arrow-right"></i> <span data-i18n="common.details">Details</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- ===== Parts ===== -->
+      <div class="product-card p-0 overflow-hidden">
+        <div class="relative h-48 overflow-hidden">
+          <img src="assets/images/cat-parts.jpg"
+               alt="Motorcycle parts B2B wholesale - Parts category"
+               class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+               loading="lazy"
+               onerror="this.onerror=null; this.src='assets/images/placeholder.svg';" />
+          <div class="absolute top-3 left-3 bg-gold text-black text-xs font-bold px-3 py-1 rounded-full">
+            <i class="fas fa-cogs mr-1"></i> Parts
+          </div>
+        </div>
+        <div class="p-5">
+          <h3 class="text-xl font-bold" data-i18n="home.cat3">Parts</h3>
+          <p class="text-sm text-gray-400 mt-1" data-i18n="home.cat3desc">200+ SKU · OEM quality</p>
+          <a href="product-detail.html?id=parts" class="text-gold text-sm mt-3 inline-block">
+            <i class="fas fa-arrow-right"></i> <span data-i18n="common.details">Details</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= Dirt Bike 系列（新增区块） ================= -->
+  <div class="mt-16">
+    <h2 class="text-3xl font-bold mb-8">
+      <span class="text-gold">Dirt Bike Series</span>
+    </h2>
+    <div class="grid sm:grid-cols-2 gap-6">
+
+      <!-- YFY200GY-12 -->
+      <div class="product-card p-0 overflow-hidden">
+        <div class="relative h-56 overflow-hidden">
+          <img src="assets/images/yfy200-main.jpg"
+               alt="YFY200GY-12 200cc dirt bike B2B wholesale supplier"
+               class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+               loading="lazy"
+               onerror="this.onerror=null; this.src='assets/images/placeholder.svg';" />
+          <div class="absolute top-3 left-3 bg-gold text-black text-xs font-bold px-3 py-1 rounded-full">
+            <i class="fas fa-motorcycle mr-1"></i> 2026 New
+          </div>
+        </div>
+        <div class="p-5">
+          <h3 class="text-xl font-bold">YFY200GY-12 Dirt Bike</h3>
+          <p class="text-sm text-gray-400 mt-1">200cc · 4-stroke · 5-speed · 14L tank · MOQ 30</p>
+          <div class="flex gap-3 mt-3 flex-wrap">
+            <a href="product-detail.html?id=yfy200" class="btn-secondary text-sm px-4 py-2">
+              <i class="fas fa-info-circle mr-1"></i> Details
+            </a>
+            <a href="contact.html?product=yfy200" class="btn-primary text-sm px-4 py-2">
+              <i class="fas fa-envelope mr-1"></i> Quote
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- YFY200GY-11 -->
+      <div class="product-card p-0 overflow-hidden">
+        <div class="relative h-56 overflow-hidden">
+          <img src="assets/images/yfy200-11-main.jpg"
+               alt="YFY200GY-11 200cc dirt bike cheap wholesale supplier"
+               class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+               loading="lazy"
+               onerror="this.onerror=null; this.src='assets/images/placeholder.svg';" />
+          <div class="absolute top-3 left-3 bg-gold text-black text-xs font-bold px-3 py-1 rounded-full">
+            <i class="fas fa-motorcycle mr-1"></i> Classic
+          </div>
+        </div>
+        <div class="p-5">
+          <h3 class="text-xl font-bold">YFY200GY-11 Dirt Bike</h3>
+          <p class="text-sm text-gray-400 mt-1">200cc · 4-stroke · 5-speed · Best cost-performance</p>
+          <div class="flex gap-3 mt-3 flex-wrap">
+            <a href="product-detail.html?id=yfy200-11" class="btn-secondary text-sm px-4 py-2">
+              <i class="fas fa-info-circle mr-1"></i> Details
+            </a>
+            <a href="contact.html?product=yfy200-11" class="btn-primary text-sm px-4 py-2">
+              <i class="fas fa-envelope mr-1"></i> Quote
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 </main>
 
 <footer id="site-footer" class="border-t border-white/5 py-8 px-4 text-center text-xs text-gray-500 bg-[#080a0c] mt-8"></footer>
 
 <script src="assets/js/i18n.js"></script>
 <script src="assets/js/main.js"></script>
+
+<!-- ================= Hero 轮播脚本 ================= -->
+<script>
+  (function () {
+    const slider = document.getElementById('heroSlider');
+    if (!slider) return;
+
+    const slides = slider.querySelectorAll('.hero-slide');
+    const dots = slider.querySelectorAll('.hero-dot');
+    let current = 0;
+    let timer = null;
+    const INTERVAL = 3500; // 3.5 秒切换一次
+
+    function showSlide(index) {
+      slides.forEach((s, i) => {
+        s.style.opacity = (i === index) ? '1' : '0';
+      });
+      dots.forEach((d, i) => {
+        d.style.background = (i === index) ? '#FF9922' : 'rgba(255,255,255,0.4)';
+      });
+      current = index;
+    }
+
+    function nextSlide() {
+      showSlide((current + 1) % slides.length);
+    }
+
+    function startAuto() {
+      stopAuto();
+      timer = setInterval(nextSlide, INTERVAL);
+    }
+
+    function stopAuto() {
+      if (timer) clearInterval(timer);
+      timer = null;
+    }
+
+    // 点击圆点手动切换
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        showSlide(i);
+        startAuto(); // 重置计时
+      });
+    });
+
+    // 鼠标悬停暂停
+    slider.addEventListener('mouseenter', stopAuto);
+    slider.addEventListener('mouseleave', startAuto);
+
+    // 初始化
+    showSlide(0);
+    startAuto();
+  })();
+</script>
 </body>
 </html>
