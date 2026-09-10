@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products · HECOTH B2B Electric & Fuel Motorcycles</title>
+  <meta name="description" content="Complete product lineup: electric motorcycles, fuel motorcycles, OEM parts. B2B wholesale." />
+  <meta name="keywords" content="electric motorcycle, fuel motorcycle, motorcycle parts, B2B products" />
+  <link rel="canonical" href="https://YOUR_USERNAME.github.io/hecoth-b2b/products.html" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<nav id="site-nav" class="floating-nav"></nav>
+
+<main class="page-wrap">
+  <h2 class="text-4xl font-bold mb-4"><span class="text-gold" data-i18n="products.title">Products</span></h2>
+  <p class="text-gray-400 mb-10" data-i18n="products.sub">Complete lineup of electric, fuel motorcycles and precision parts.</p>
+
+  <div class="grid md:grid-cols-3 gap-8" id="product-grid"></div>
+</main>
+
+<footer id="site-footer" class="border-t border-white/5 py-8 px-4 text-center text-xs text-gray-500 bg-[#080a0c] mt-8"></footer>
+
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/products.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+  // 渲染产品列表
+  (function () {
+    function render() {
+      const grid = document.getElementById('product-grid');
+      if (!grid) return;
+      const dict = window.TRANSLATIONS[window.HECOTH.getLang()];
+      let html = '';
+
+      const listSpecs = {
+        e4: [['Motor', '12kW PMSM'], ['Battery', '72V 60Ah LiFePO₄'], ['Range', '140 km'], ['Top speed', '110 km/h']],
+        f450: [['Engine', '450cc EFI'], ['Power', '38 HP'], ['Weight', '165 kg'], ['Seat', '890 mm']],
+        parts: [['Brake pads', 'Sintered'], ['Chain kit', '520 O-ring'], ['LED lights', 'DRL'], ['Stock', '200+ SKU']]
+      };
+
+      Object.values(window.PRODUCTS).forEach(p => {
+        const specs = listSpecs[p.id] || [];
+        const specsHtml = specs.map(([k, v]) =>
+          `<p><span class="spec-label">${k}:</span> <span class="spec-value">${v}</span></p>`
+        ).join('');
+
+        html += `
+          <div class="product-card">
+            <div class="flex items-center gap-3 text-gold text-2xl">
+              <i class="fas ${p.icon}"></i>
+              <span class="text-lg font-bold">${p.name.split(' ').pop()}</span>
+            </div>
+            <img src="${p.image}"
+                 alt="${p.name}"
+                 class="rounded-lg w-full mt-3 border border-white/10"
+                 loading="lazy"
+                 onerror="this.onerror=null; this.src='assets/images/placeholder.svg';" />
+            <div class="mt-4 space-y-1 text-sm">${specsHtml}</div>
+            <div class="flex gap-3 mt-4 flex-wrap">
+              <a href="contact.html?product=${p.id}" class="btn-primary text-sm px-6 py-2">
+                <i class="fas fa-envelope mr-2"></i> <span data-i18n="common.quote">Quote</span>
+              </a>
+              <a href="product-detail.html?id=${p.id}" class="btn-secondary text-sm px-6 py-2">
+                <i class="fas fa-info-circle mr-2"></i> <span data-i18n="common.details">Details</span>
+              </a>
+            </div>
+          </div>
+        `;
+      });
+      grid.innerHTML = html;
+
+      if (dict) {
+        grid.querySelectorAll('[data-i18n]').forEach(el => {
+          const k = el.dataset.i18n;
+          if (dict[k] !== undefined) el.textContent = dict[k];
+        });
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', render);
+    document.addEventListener('langchange', render);
+  })();
+</script>
+</body>
+</html>

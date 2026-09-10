@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact · Request a Quote · HECOTH B2B</title>
+  <meta name="description" content="Request a quote from HECOTH. B2B electric & fuel motorcycles, OEM parts. Response within 12 hours." />
+  <meta name="keywords" content="contact HECOTH, request quote, B2B motorcycle inquiry, sales@hecoth.com" />
+  <link rel="canonical" href="https://YOUR_USERNAME.github.io/hecoth-b2b/contact.html" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<nav id="site-nav" class="floating-nav"></nav>
+
+<main class="page-wrap">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-4xl font-bold text-center">
+      <span class="text-gold" data-i18n="contact.title">Get</span> a Quote
+    </h2>
+    <p class="text-center text-gray-400 mb-8" data-i18n="contact.sub">Fill the form...</p>
+
+    <!--
+      ⚠️ 替换下方 action 中的 YOUR_FORMSPREE_ID：
+      1. 到 https://formspree.io 注册并创建表单
+      2. 得到 endpoint 如 https://formspree.io/f/xxxxxxx
+      3. Formspree 后台设置转发到 sales@hecoth.com
+    -->
+    <form id="quoteForm"
+          action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+          method="POST"
+          class="bg-card p-8 rounded-3xl border border-white/10 space-y-5">
+
+      <div class="grid sm:grid-cols-2 gap-4">
+        <input type="text" name="name" required data-i18n-placeholder="contact.name" placeholder="Company / Name" />
+        <input type="email" name="email" required data-i18n-placeholder="contact.email" placeholder="Email *" />
+      </div>
+      <input type="text" name="product" data-i18n-placeholder="contact.interest" placeholder="Product interest" />
+      <select name="country">
+        <option value="" data-i18n="contact.country">Select country</option>
+        <option>United States</option><option>United Kingdom</option><option>Germany</option>
+        <option>France</option><option>Spain</option><option>Brazil</option>
+        <option>UAE</option><option>Russia</option><option>Portugal</option>
+        <option>Saudi Arabia</option><option>Mexico</option><option>Other</option>
+      </select>
+      <textarea name="message" rows="4" data-i18n-placeholder="contact.message" placeholder="Quantity, specifications..."></textarea>
+
+      <input type="hidden" name="_subject" value="New B2B Inquiry from HECOTH Website" />
+      <input type="text" name="_gotcha" style="display:none" />
+
+      <div class="flex items-center gap-2 text-xs">
+        <input type="checkbox" name="agree" class="w-auto" required />
+        <span data-i18n="contact.agree">I agree...</span>
+      </div>
+
+      <button type="submit" class="btn-primary w-full py-4 text-base">
+        <i class="fas fa-paper-plane mr-2"></i>
+        <span data-i18n="contact.send">Send inquiry</span>
+      </button>
+
+      <p class="text-center text-xs text-gray-500">
+        Direct to <span class="text-gold">sales@hecoth.com</span>
+      </p>
+    </form>
+
+    <!-- 表单提交成功提示 -->
+    <div id="formSuccess" style="display:none" class="bg-card p-6 rounded-2xl border border-gold mt-6 text-center">
+      <i class="fas fa-check-circle text-gold text-3xl"></i>
+      <p class="mt-2 text-gold font-bold">Thank you! Your inquiry has been sent.</p>
+      <p class="text-xs text-gray-400 mt-1">Our team will reply within 12 hours.</p>
+    </div>
+  </div>
+</main>
+
+<footer id="site-footer" class="border-t border-white/5 py-8 px-4 text-center text-xs text-gray-500 bg-[#080a0c] mt-8"></footer>
+
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+  // 从 URL ?product=e4 自动填充产品兴趣
+  (function () {
+    const params = new URLSearchParams(window.location.search);
+    const product = params.get('product');
+    if (product) {
+      const input = document.querySelector('input[name="product"]');
+      if (input) input.value = product.toUpperCase();
+    }
+  })();
+
+  // 表单提交（AJAX，无跳转）
+  document.getElementById('quoteForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const form = e.target;
+    const data = new FormData(form);
+    const btn = form.querySelector('button[type="submit"]');
+    const originalHTML = btn.innerHTML;
+
+    btn.disabled = true;
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Sending...';
+
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        form.style.display = 'none';
+        document.getElementById('formSuccess').style.display = 'block';
+      } else {
+        throw new Error('Server error');
+      }
+    } catch (err) {
+      // 回退到 mailto
+      window.location.href = 'mailto:sales@hecoth.com?subject=B2B Inquiry&body=' +
+        encodeURIComponent('Name: ' + (data.get('name') || '') + '\n' +
+                          'Email: ' + (data.get('email') || '') + '\n' +
+                          'Product: ' + (data.get('product') || '') + '\n' +
+                          'Message: ' + (data.get('message') || ''));
+    } finally {
+      btn.disabled = false;
+      btn.innerHTML = originalHTML;
+    }
+  });
+</script>
+</body>
+</html>

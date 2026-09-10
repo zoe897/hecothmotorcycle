@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#1a1f24"/>
+  <circle cx="400" cy="260" r="80" fill="none" stroke="#ff9922" stroke-width="4" opacity="0.3"/>
+  <text x="50%" y="48%" text-anchor="middle" dominant-baseline="middle"
+        fill="#ff9922" font-size="56" font-family="Arial, sans-serif" font-weight="bold" letter-spacing="4">
+    HECOTH
+  </text>
+  <text x="50%" y="58%" text-anchor="middle" dominant-baseline="middle"
+        fill="#8a8a8a" font-size="20" font-family="Arial, sans-serif" letter-spacing="2">
+    Image Coming Soon
+  </text>
+  <line x1="280" y1="380" x2="520" y2="380" stroke="#ff9922" stroke-width="2" opacity="0.4"/>
+</svg>
