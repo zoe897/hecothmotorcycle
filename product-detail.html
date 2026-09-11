@@ -4,8 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Product Details · HECOTH B2B</title>
-  <meta name="description" content="Detailed technical specifications for HECOTH electric motorcycles, fuel motorcycles and parts." />
-  <link rel="canonical" href="https://YOUR_USERNAME.github.io/hecoth-b2b/product-detail.html" />
+  <meta name="description" content="Detailed technical specifications for HECOTH electric motorcycles, electric street bikes, fuel motorcycles and dirt bikes." />
+  <meta name="keywords" content="dirt bike, electric motorcycle, electric street motorcycle, fuel motorcycle, motorcycle parts, B2B wholesale" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://hecothmotorcycle.vercel.app/product-detail.html" />
+
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -35,44 +38,137 @@
       return params.get('id') || 'e4';
     }
 
+    // 从多语言字段里取值（兼容旧版字符串字段）
+    function pick(field, lang) {
+      if (field === null || field === undefined) return '';
+      if (typeof field === 'string') return field; // 兼容旧的纯字符串
+      return field[lang] || field.en || '';
+    }
+
     function render() {
       const id = getQueryId();
       const p = window.PRODUCTS[id];
       const container = document.getElementById('product-detail-container');
-      const dict = window.TRANSLATIONS[window.HECOTH.getLang()];
+      const lang = window.HECOTH.getLang();
+      const dict = window.TRANSLATIONS[lang];
 
       if (!p) {
         container.innerHTML = '<p class="text-center text-gray-400">Product not found. <a href="products.html" class="text-gold">Back to Products</a></p>';
         return;
       }
 
-      // SEO 更新
-      document.title = p.name + ' · HECOTH B2B';
-      const metaDesc = document.querySelector('meta[name="description"]');
-      if (metaDesc) metaDesc.setAttribute('content', p.description.substring(0, 155));
+      // 取出当前语言的字段
+      const productName = pick(p.name, lang);
+      const productDesc = pick(p.description, lang);
+      const productHighlights = Array.isArray(p.highlights)
+        ? p.highlights
+        : (p.highlights && p.highlights[lang]) || (p.highlights && p.highlights.en) || [];
 
+      // SEO 标题
+      let titleSuffix = ' · B2B Wholesale Supplier · HECOTH';
+      if (p.id === 'e4' || p.id === 'street-ev') {
+        titleSuffix = ' Electric · B2B Wholesale Supplier · HECOTH';
+      } else if (p.id.startsWith('yfy200')) {
+        titleSuffix = ' 200cc · B2B Wholesale Supplier · HECOTH';
+      }
+      document.title = productName + titleSuffix;
+
+      const setMeta = (sel, attr, val) => {
+        const el = document.querySelector(sel);
+        if (el) el.setAttribute(attr, val);
+      };
+      setMeta('meta[name="description"]', 'content', productDesc.substring(0, 155));
+      setMeta('meta[name="keywords"]', 'content', p.keywords);
+      setMeta('link[rel="canonical"]', 'href',
+        'https://hecothmotorcycle.vercel.app/product-detail.html?id=' + p.id);
+
+      // 规格表（英文）
       const specsRows = Object.entries(p.specs).map(([k, v]) =>
         `<tr><td class="label">${k}</td><td>${v}</td></tr>`
       ).join('');
 
-      const highlightsHtml = p.highlights.map(h =>
+      // 亮点（当前语言）
+      const highlightsHtml = productHighlights.map(h =>
         `<li class="flex items-start gap-2"><i class="fas fa-check-circle text-gold mt-0.5"></i> <span>${h}</span></li>`
       ).join('');
 
       const mainImg = `
         <img src="${p.image}"
-             alt="${p.name}"
+             alt="${productName} - B2B wholesale supplier China"
              class="w-full rounded-xl"
              onerror="this.onerror=null; this.src='assets/images/placeholder.svg';" />
       `;
 
-      const galleryHtml = p.gallery.map(img =>
+      const galleryHtml = p.gallery.map((img, i) =>
         `<img src="${img}"
-              alt="${p.name} view"
-              class="w-28 h-20 object-cover"
+              alt="${productName} - view ${i + 1} - B2B manufacturer"
+              class="w-28 h-20 object-cover cursor-pointer"
               loading="lazy"
               onerror="this.onerror=null; this.src='assets/images/placeholder.svg';" />`
       ).join('');
+
+      // JSON-LD
+      const existingJsonLd = document.getElementById('dynamic-product-jsonld');
+      if (existingJsonLd) existingJsonLd.remove();
+
+      const jsonLd = document.createElement('script');
+      jsonLd.id = 'dynamic-product-jsonld';
+      jsonLd.type = 'application/ld+json';
+
+      const baseSchema = {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": productName,
+        "image": [
+          "https://hecothmotorcycle.vercel.app/" + p.image,
+          ...p.gallery.map(g => "https://hecothmotorcycle.vercel.app/" + g)
+        ],
+        "description": productDesc,
+        "sku": p.id,
+        "brand": { "@type": "Brand", "name": "HECOTH" },
+        "category": p.category,
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "USD",
+          "lowPrice": "600",
+          "highPrice": "900",
+          "offerCount": "30",
+          "availability": "https://schema.org/InStock",
+          "seller": { "@type": "Organization", "name": "HECOTH" }
+        }
+      };
+
+      if (p.id === 'street-ev') {
+        baseSchema.subjectOf = [
+          {
+            "@type": "Question",
+            "name": "What is the top speed of this electric street motorcycle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The HECOTH Electric Street Motorcycle has a top speed of 90 km/h."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How far can this electric motorcycle travel on one charge?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It offers a range of 100–120 km per full charge with a 72V lithium battery."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the MOQ for wholesale orders?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The MOQ is 30 units, and 75 pcs fit in a 40HQ container."
+            }
+          }
+        ];
+      }
+
+      jsonLd.textContent = JSON.stringify(baseSchema);
+      document.head.appendChild(jsonLd);
 
       container.innerHTML = `
         <div class="grid md:grid-cols-2 gap-10">
@@ -87,8 +183,8 @@
               <i class="fas ${p.icon}"></i>
               <span class="text-sm text-gray-400 uppercase tracking-wider">${p.category}</span>
             </div>
-            <h1 class="text-4xl font-black">${p.name}</h1>
-            <p class="text-gray-300 mt-4 leading-relaxed">${p.description}</p>
+            <h1 class="text-4xl font-black">${productName}</h1>
+            <p class="text-gray-300 mt-4 leading-relaxed">${productDesc}</p>
             <ul class="mt-6 space-y-2 text-sm">${highlightsHtml}</ul>
             <div class="flex gap-3 mt-8 flex-wrap">
               <a href="contact.html?product=${p.id}" class="btn-primary">
@@ -102,10 +198,22 @@
         </div>
 
         <div class="mt-12 bg-card p-8 rounded-2xl border border-white/10">
-          <h3 class="text-2xl font-bold mb-6">
-            <span class="text-gold" data-i18n="product.specs">Technical Specifications</span>
-          </h3>
+          <h2 class="text-2xl font-bold mb-6">
+            <span class="text-gold" data-i18n="product.specs">Specification</span>
+          </h2>
           <table class="spec-table">${specsRows}</table>
+        </div>
+
+        <div class="mt-8 bg-card p-8 rounded-2xl border border-white/10">
+          <h2 class="text-2xl font-bold mb-4">
+            <span class="text-gold">Terms &amp; Conditions</span>
+          </h2>
+          <ul class="text-sm text-gray-300 space-y-3">
+            <li><span class="text-gold font-semibold">Packing term:</span> Standard exporting packaging</li>
+            <li><span class="text-gold font-semibold">Shipping:</span> By sea</li>
+            <li><span class="text-gold font-semibold">Delivery Time:</span> Within 30–45 days on receipt of prepayment (based on final quantity and manufacturer production schedule). Production may be longer during national holidays such as Chinese Spring Festival.</li>
+            <li><span class="text-gold font-semibold">Remark:</span> Product specifications and parameters are subject to change for improving reliability, function or design.</li>
+          </ul>
         </div>
 
         <div class="mt-6 text-xs text-gray-500">
