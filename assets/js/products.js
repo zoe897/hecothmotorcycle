@@ -425,4 +425,70 @@ window.PRODUCTS = {
     },
     keywords: 'YFY150GY-1, 150cc dirt bike, 150cc off-road motorcycle, small dirt bike wholesale, dirt bike manufacturer China, enduro motorcycle supplier, Brazil dirt bike, Africa dirt bike importer, OEM dirt bike, MOQ 30 dirt bike, 4 stroke dirt bike, air cooled dirt bike, 5 speed dirt bike, 14L fuel tank dirt bike, beginner dirt bike'
   },
+    /* ================= YFY250/200 PY Dirt Bike ================= */
+  'yfy250-py': {
+    id: 'yfy250-py',
+    category: 'fuel',
+    icon: 'fa-motorcycle',
+    image: 'assets/images/yfy250-py-main.jpg',
+    gallery: [
+      'assets/images/yfy250-py-1.jpg',
+      'assets/images/yfy250-py-2.jpg',
+      'assets/images/yfy250-py-3.jpg'
+    ],
+    name: {
+      en: 'YFY250/200 PY Dirt Bike',
+      es: 'YFY250/200 PY Moto de Cross',
+      fr: 'YFY250/200 PY Moto Cross',
+      ar: 'YFY250/200 PY دراجة ترابية',
+      ru: 'YFY250/200 PY Кроссовый мотоцикл',
+      pt: 'YFY250/200 PY Moto de Trilha'
+    },
+    description: {
+      en: 'The YFY250/200 PY is a high-performance dual-displacement dirt bike offering 250cc or 200cc air-cooled 4-stroke engine options. With front and rear disc brakes, a 5-speed international gearbox, CDI ignition, electric/kick start and a 14L fuel tank, it delivers the perfect balance of power, control and reliability for intermediate riders and off-road racing. MOQ 30 units — ideal for wholesale importers in Brazil, Africa, Latin America and the Middle East.',
+      es: 'La YFY250/200 PY es una moto de cross de doble cilindrada de alto rendimiento, con opciones de motor 250cc o 200cc, 4 tiempos refrigerado por aire. Con frenos de disco delantero y trasero, caja internacional de 5 velocidades, encendido CDI, arranque eléctrico/pedal y depósito de 14L, ofrece el equilibrio perfecto entre potencia, control y fiabilidad para pilotos intermedios y competición off-road. MOQ 30 unidades — ideal para importadores de Brasil, África, América Latina y Oriente Medio.',
+      fr: 'La YFY250/200 PY est une moto cross bi-cylindrée haute performance, avec moteur 250cc ou 200cc, 4 temps refroidi par air. Avec freins à disque avant et arrière, boîte internationale 5 vitesses, allumage CDI, démarrage électrique/kick et réservoir 14L, elle offre l\'équilibre parfait entre puissance, contrôle et fiabilité pour pilotes intermédiaires et compétition hors route. MOQ 30 unités — idéale pour importateurs au Brésil, en Afrique, en Amérique latine et au Moyen-Orient.',
+      ar: 'YFY250/200 PY هي دراجة ترابية عالية الأداء بسعة مزدوجة، توفر خيارات محرك 250 سي سي أو 200 سي سي، رباعي الأشواط مبرد بالهواء. مع فرامل قرصية أمامية وخلفية، وعلبة دولية 5 سرعات، وإشعال CDI، وبدء كهربائي/بالقدم، وخزان 14 لتر، توفر التوازن المثالي بين القوة والتحكم والموثوقية للراكبين المتوسطين والسباقات على الطرق الوعرة. الحد الأدنى 30 وحدة — مثالية لمستوردي البرازيل وأفريقيا وأمريكا اللاتينية والشرق الأوسط.',
+      ru: 'YFY250/200 PY — высокопроизводительный кроссовый мотоцикл с двумя вариантами объёма: 250cc или 200cc, 4-тактный с воздушным охлаждением. С передними и задними дисковыми тормозами, международной 5-ступенчатой КПП, зажиганием CDI, электро/кик-стартером и баком 14 л обеспечивает идеальный баланс мощности, контроля и надёжности для опытных райдеров и внедорожных гонок. MOQ 30 шт. — идеален для оптовых импортёров Бразилии, Африки, Латинской Америки и Ближнего Востока.',
+      pt: 'A YFY250/200 PY é uma moto de trilha de dupla cilindrada de alto desempenho, com opções de motor 250cc ou 200cc, 4 tempos refrigerado a ar. Com travões de disco dianteiro e traseiro, caixa internacional de 5 velocidades, ignição CDI, arranque elétrico/pedal e depósito de 14L, oferece o equilíbrio perfeito entre potência, controlo e fiabilidade para pilotos intermédios e competição off-road. MOQ 30 unidades — ideal para importadores no Brasil, África, América Latina e Médio Oriente.'
+    },
+    highlights: {
+      en: ['250cc / 200cc dual displacement options', '10.5KW / 7000rpm max power, 16.5N.m / 5500rpm max torque', 'Front & rear disc brakes for superior stopping power', 'International 5-speed manual gearbox', 'Electric / kick start + CDI ignition', '14L large fuel tank — long range for off-road racing', 'Seat height 850mm, ground clearance 280mm', 'Max speed >100km/h, loading capacity 150kg', 'MOQ 30 units — perfect for Brazil, Nigeria, Peru, UAE, Algeria importers'],
+      es: ['Opciones de cilindrada dual 250cc / 200cc', 'Potencia máxima 10.5KW / 7000rpm, par máximo 16.5N.m / 5500rpm', 'Frenos de disco delantero y trasero — mayor potencia de frenado', 'Caja manual internacional de 5 velocidades', 'Arranque eléctrico/pedal + encendido CDI', 'Depósito grande de 14L — gran autonomía para competición', 'Altura de asiento 850mm, altura libre 280mm', 'Velocidad máxima >100km/h, carga 150kg', 'MOQ 30 unidades — para importadores de Brasil, Nigeria, Perú, EAU, Argelia'],
+      fr: ['Options de cylindrée double 250cc / 200cc', 'Puissance max 10.5KW / 7000rpm, couple max 16.5N.m / 5500rpm', 'Freins à disque avant et arrière — freinage supérieur', 'Boîte manuelle internationale 5 vitesses', 'Démarrage électrique/kick + allumage CDI', 'Grand réservoir 14L — longue autonomie pour la compétition', 'Hauteur de selle 850mm, garde au sol 280mm', 'Vitesse max >100km/h, charge max 150kg', 'MOQ 30 unités — pour importateurs Brésil, Nigeria, Pérou, EAU, Algérie'],
+      ar: ['خيارات سعة مزدوجة 250/200 سي سي', 'قوة قصوى 10.5 كيلوواط / 7000 دورة، عزم أقصى 16.5 نيوتن.متر / 5500 دورة', 'فرامل قرصية أمامية وخلفية — قوة توقف فائقة', 'علبة يدوية دولية 5 سرعات', 'بدء كهربائي/بالقدم + إشعال CDI', 'خزان كبير 14 لتر — مدى طويل للسباقات', 'ارتفاع المقعد 850 مم، خلوص أرضي 280 مم', 'سرعة قصوى >100 كم/س، حمولة 150 كجم', 'الحد الأدنى 30 وحدة — لمستوردي البرازيل ونيجيريا وبيرو والإمارات والجزائر'],
+      ru: ['Два варианта объёма: 250cc / 200cc', 'Макс. мощность 10.5 кВт / 7000 об/мин, макс. крутящий момент 16.5 Н·м / 5500 об/мин', 'Передние и задние дисковые тормоза — превосходное торможение', 'Международная 5-ступенчатая МКПП', 'Электро/кик-стартер + зажигание CDI', 'Большой бак 14 л — большой запас хода для гонок', 'Высота сиденья 850 мм, клиренс 280 мм', 'Макс. скорость >100 км/ч, грузоподъёмность 150 кг', 'MOQ 30 шт. — для импортёров Бразилии, Нигерии, Перу, ОАЭ, Алжира'],
+      pt: ['Opções de dupla cilindrada 250cc / 200cc', 'Potência máx 10.5KW / 7000rpm, binário máx 16.5N.m / 5500rpm', 'Travões de disco dianteiro e traseiro — travagem superior', 'Caixa manual internacional de 5 velocidades', 'Arranque elétrico/pedal + ignição CDI', 'Depósito grande de 14L — longa autonomia para competição', 'Altura do assento 850mm, altura ao solo 280mm', 'Velocidade máx >100km/h, carga 150kg', 'MOQ 30 unidades — para importadores do Brasil, Nigéria, Peru, EAU, Argélia']
+    },
+    specs: {
+      'Model': 'YFY250/200 PY',
+      'Engine Type': '4 stroke, single cylinder, air cooling',
+      'Displacement': '250cc / 200cc (optional)',
+      'Max. Power': '10.5KW / 7000r/min',
+      'Max. Torque': '16.5N.m / 5500r/min',
+      'Cooling Type': 'Air cooling',
+      'Fuel Delivery': 'Carburetor',
+      'Start Method': 'Electric / kick',
+      'Clutch': 'Manual',
+      'Gear': 'International 5 gears',
+      'Ignition Method': 'CDI',
+      'Max. Speed': '>100 km/h',
+      'L*W*H': '2200 × 815 × 1190 mm',
+      'Wheel Base': '1400 mm',
+      'Seat Height': '850 mm',
+      'Vehicle Weight': '120 kg',
+      'Max. Loading': '150 kg',
+      'Front / Rear Brake': 'Disk / disk',
+      'Fuel Tank Volume': '14 L',
+      'Front / Rear Tyre': '90/90-19, 110/90-17',
+      'Min. Ground Clearance': '280 mm',
+      'Battery': '12V 6.5A',
+      'MOQ': '30 units',
+      'Packing Term': 'Standard exporting packaging',
+      'Shipping': 'By sea',
+      'Delivery Time': 'Within 30–45 days after prepayment',
+      'Lead Time': '30–45 days'
+    },
+    keywords: 'YFY250/200 PY, 250cc dirt bike, 200cc dirt bike, 250cc enduro motorcycle, dual displacement dirt bike, 250cc dirt bike wholesale, 250cc dirt bike supplier China, enduro motorcycle supplier, Brazil dirt bike, Africa dirt bike importer, OEM dirt bike, MOQ 30 dirt bike, 4 stroke dirt bike, air cooled dirt bike, 5 speed dirt bike, 14L fuel tank dirt bike, front rear disc brake dirt bike, off-road racing motorcycle'
+  },
 };
