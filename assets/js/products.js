@@ -358,5 +358,71 @@ window.PRODUCTS = {
       'Lead Time': '30–45 days'
     },
     keywords: 'YFY200GY-11, 200cc dirt bike, cheap 200cc dirt bike, dirt bike wholesale, dirt bike manufacturer China, off-road motorcycle 200cc, enduro motorcycle supplier, Brazil dirt bike, Africa dirt bike importer, OEM dirt bike, MOQ 30 dirt bike'
-  }
+  },
+    /* ================= YFY150GY-1 ================= */
+  'yfy150-1': {
+    id: 'yfy150-1',
+    category: 'fuel',
+    icon: 'fa-motorcycle',
+    image: 'assets/images/yfy150-1-main.jpg',
+    gallery: [
+      'assets/images/yfy150-1-1.jpg',
+      'assets/images/yfy150-1-2.jpg',
+      'assets/images/yfy150-1-3.jpg'
+    ],
+    name: {
+      en: 'YFY150GY-1 Dirt Bike',
+      es: 'YFY150GY-1 Moto de Cross',
+      fr: 'YFY150GY-1 Moto Cross',
+      ar: 'YFY150GY-1 دراجة ترابية',
+      ru: 'YFY150GY-1 Кроссовый мотоцикл',
+      pt: 'YFY150GY-1 Moto de Trilha'
+    },
+    description: {
+      en: 'The YFY150GY-1 is a lightweight 150cc air-cooled 4-stroke dirt bike, ideal for beginner riders and daily off-road utility. Featuring a 5-speed international gearbox, CDI ignition, electric/kick start and a 14L fuel tank, it delivers a perfect balance of economy and reliability. MOQ 30 units — perfect for wholesale importers in Brazil, Africa, Latin America and the Middle East.',
+      es: 'La YFY150GY-1 es una moto de cross ligera de 150cc, 4 tiempos, refrigerada por aire, ideal para principiantes y uso diario off-road. Con caja internacional de 5 velocidades, encendido CDI, arranque eléctrico/pedal y depósito de 14L, ofrece un equilibrio perfecto entre economía y fiabilidad. MOQ 30 unidades — perfecta para importadores de Brasil, África, América Latina y Oriente Medio.',
+      fr: 'La YFY150GY-1 est une moto cross légère 150cc, 4 temps, refroidie par air, idéale pour les débutants et l\'usage quotidien hors route. Avec boîte internationale 5 vitesses, allumage CDI, démarrage électrique/kick et réservoir 14L, elle offre un équilibre parfait entre économie et fiabilité. MOQ 30 unités — parfaite pour les importateurs au Brésil, en Afrique, en Amérique latine et au Moyen-Orient.',
+      ar: 'YFY150GY-1 هي دراجة ترابية خفيفة بسعة 150 سي سي، رباعية الأشواط مبردة بالهواء، مثالية للمبتدئين والاستخدام اليومي على الطرق الوعرة. مزودة بعلبة دولية 5 سرعات وإشعال CDI وبدء كهربائي/بالقدم وخزان 14 لتر، وتوفر توازناً مثالياً بين الاقتصاد والموثوقية. الحد الأدنى 30 وحدة — مثالية لمستوردي البرازيل وأفريقيا وأمريكا اللاتينية والشرق الأوسط.',
+      ru: 'YFY150GY-1 — лёгкий 150-кубовый 4-тактный кроссовый мотоцикл с воздушным охлаждением, идеален для начинающих и повседневного бездорожья. Оснащён 5-ступенчатой международной КПП, зажиганием CDI, электро/кик-стартером и баком 14 л, обеспечивает идеальный баланс экономичности и надёжности. MOQ 30 шт. — идеален для оптовых импортёров Бразилии, Африки, Латинской Америки и Ближнего Востока.',
+      pt: 'A YFY150GY-1 é uma moto de trilha leve 150cc, 4 tempos, refrigerada a ar, ideal para iniciantes e uso diário off-road. Com caixa internacional de 5 velocidades, ignição CDI, arranque elétrico/pedal e depósito de 14L, oferece um equilíbrio perfeito entre economia e fiabilidade. MOQ 30 unidades — perfeita para importadores no Brasil, África, América Latina e Médio Oriente.'
+    },
+    highlights: {
+      en: ['150cc 4-stroke air-cooled engine', '8.2KW / 8000rpm max power, 10N.m / 7500rpm max torque', 'International 5-speed manual gearbox', 'Electric / kick start + CDI ignition', '14L large fuel tank — long range', 'Front disc + rear drum brake, 290mm ground clearance', 'Max speed >100km/h, loading capacity 150kg', 'Lightweight 120 kg — easy to handle', 'MOQ 30 units — perfect for Brazil, Nigeria, Peru, UAE, Algeria importers'],
+      es: ['Motor 150cc 4T refrigerado por aire', 'Potencia máxima 8.2KW / 8000rpm, par máximo 10N.m / 7500rpm', 'Caja manual internacional de 5 velocidades', 'Arranque eléctrico/pedal + encendido CDI', 'Depósito grande de 14L — gran autonomía', 'Freno disco delantero + tambor trasero, altura libre 290mm', 'Velocidad máxima >100km/h, carga 150kg', 'Ligera 120 kg — fácil de manejar', 'MOQ 30 unidades — para importadores de Brasil, Nigeria, Perú, EAU, Argelia'],
+      fr: ['Moteur 150cc 4T refroidi par air', 'Puissance max 8.2KW / 8000rpm, couple max 10N.m / 7500rpm', 'Boîte manuelle internationale 5 vitesses', 'Démarrage électrique/kick + allumage CDI', 'Grand réservoir 14L — longue autonomie', 'Frein à disque avant + tambour arrière, garde au sol 290mm', 'Vitesse max >100km/h, charge max 150kg', 'Légère 120 kg — facile à manier', 'MOQ 30 unités — pour importateurs Brésil, Nigeria, Pérou, EAU, Algérie'],
+      ar: ['محرك 150 سي سي 4 أشواط مبرد بالهواء', 'قوة قصوى 8.2 كيلوواط / 8000 دورة، عزم أقصى 10 نيوتن.متر / 7500 دورة', 'علبة يدوية دولية 5 سرعات', 'بدء كهربائي/بالقدم + إشعال CDI', 'خزان كبير 14 لتر — مدى طويل', 'فرامل قرصية أمامية + طبلية خلفية، خلوص 290 مم', 'سرعة قصوى >100 كم/س، حمولة 150 كجم', 'خفيفة 120 كجم — سهلة المناورة', 'الحد الأدنى 30 وحدة — لمستوردي البرازيل ونيجيريا وبيرو والإمارات والجزائر'],
+      ru: ['Двигатель 150cc 4T с воздушным охлаждением', 'Макс. мощность 8.2 кВт / 8000 об/мин, макс. крутящий момент 10 Н·м / 7500 об/мин', 'Международная 5-ступенчатая МКПП', 'Электро/кик-стартер + зажигание CDI', 'Большой бак 14 л — большой запас хода', 'Передний дисковый + задний барабанный, клиренс 290 мм', 'Макс. скорость >100 км/ч, грузоподъёмность 150 кг', 'Лёгкий 120 кг — прост в управлении', 'MOQ 30 шт. — для импортёров Бразилии, Нигерии, Перу, ОАЭ, Алжира'],
+      pt: ['Motor 150cc 4T refrigerado a ar', 'Potência máx 8.2KW / 8000rpm, binário máx 10N.m / 7500rpm', 'Caixa manual internacional de 5 velocidades', 'Arranque elétrico/pedal + ignição CDI', 'Depósito grande de 14L — longa autonomia', 'Travão de disco dianteiro + tambor traseiro, altura ao solo 290mm', 'Velocidade máx >100km/h, carga 150kg', 'Leve 120 kg — fácil de manobrar', 'MOQ 30 unidades — para importadores do Brasil, Nigéria, Peru, EAU, Argélia']
+    },
+    specs: {
+      'Model': 'YFY150GY-1',
+      'Engine Type': '4 stroke, single cylinder, air cooling',
+      'Displacement': '150cc',
+      'Max. Power': '8.2KW / 8000r/min',
+      'Max. Torque': '10N.m / 7500r/min',
+      'Cooling Type': 'Air cooling',
+      'Fuel Delivery': 'Carburetor',
+      'Start Method': 'Electric / kick',
+      'Clutch': 'Manual',
+      'Gear': 'International 5 gears',
+      'Ignition Method': 'CDI',
+      'Max. Speed': '>100 km/h',
+      'L*W*H': '2080 × 820 × 1180 mm',
+      'Wheel Base': '1350 mm',
+      'Seat Height': '890 mm',
+      'Vehicle Weight': '120 kg',
+      'Max. Loading': '150 kg',
+      'Front / Rear Brake': 'Disk / drum',
+      'Fuel Tank Volume': '14 L',
+      'Front / Rear Tyre': 'Front 1.85-21, Rear 2.15-18',
+      'Min. Ground Clearance': '290 mm',
+      'Battery': '12V 6.5A',
+      'MOQ': '30 units',
+      'Packing Term': 'Standard exporting packaging',
+      'Shipping': 'By sea',
+      'Delivery Time': 'Within 30–45 days after prepayment',
+      'Lead Time': '30–45 days'
+    },
+    keywords: 'YFY150GY-1, 150cc dirt bike, 150cc off-road motorcycle, small dirt bike wholesale, dirt bike manufacturer China, enduro motorcycle supplier, Brazil dirt bike, Africa dirt bike importer, OEM dirt bike, MOQ 30 dirt bike, 4 stroke dirt bike, air cooled dirt bike, 5 speed dirt bike, 14L fuel tank dirt bike, beginner dirt bike'
+  },
 };
