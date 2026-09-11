@@ -124,56 +124,71 @@ window.PRODUCTS = {
     keywords: 'electric street motorcycle, electric motorcycle wholesale, electric street bike 90km/h, lithium battery motorcycle, 72V electric motorcycle, electric motorcycle supplier China, B2B electric motorcycle, MOQ 30 electric motorcycle, 3 speed electric motorcycle, 120km range electric bike'
   },
 
-  /* ================= Fuel Moto F450 ================= */
+    /* ================= WY150 Street Bike (原 F450 位置) ================= */
   f450: {
     id: 'f450',
     category: 'fuel',
-    icon: 'fa-gas-pump',
-    image: 'assets/images/f450-main.jpg',
+    icon: 'fa-motorcycle',
+    image: 'assets/images/wy150-main.jpg',
     gallery: [
-      'assets/images/f450-1.jpg',
-      'assets/images/f450-2.jpg',
-      'assets/images/f450-3.jpg'
+      'assets/images/wy150-1.jpg',
+      'assets/images/wy150-2.jpg',
+      'assets/images/wy150-3.jpg'
     ],
     name: {
-      en: 'HECOTH F450',
-      es: 'HECOTH F450',
-      fr: 'HECOTH F450',
-      ar: 'هيكوث F450',
-      ru: 'HECOTH F450',
-      pt: 'HECOTH F450'
+      en: 'WY150 Street Bike',
+      es: 'WY150 Moto de Calle',
+      fr: 'WY150 Moto de Route',
+      ar: 'WY150 دراجة نارية للشارع',
+      ru: 'WY150 Уличный мотоцикл',
+      pt: 'WY150 Moto de Rua'
     },
     description: {
-      en: 'The HECOTH F450 is a rugged 450cc fuel motorcycle engineered for adventure and daily commuting. Its liquid-cooled EFI engine provides reliable power and torque across all terrains.',
-      es: 'La HECOTH F450 es una moto de combustible robusta de 450cc diseñada para aventura y desplazamientos diarios. Su motor EFI refrigerado por líquido ofrece potencia y par fiables en todo tipo de terreno.',
-      fr: 'La HECOTH F450 est une moto à essence robuste de 450cc conçue pour l\'aventure et les trajets quotidiens. Son moteur EFI refroidi par liquide offre une puissance et un couple fiables sur tous les terrains.',
-      ar: 'هيكوث F450 هي دراجة وقود قوية بسعة 450 سي سي مصممة للمغامرات والتنقل اليومي. يوفر محرك EFI المبرد بالسائل قوة وعزمًا موثوقين على جميع التضاريس.',
-      ru: 'HECOTH F450 — мощный 450-кубовый бензиновый мотоцикл, созданный для приключений и ежедневных поездок. Жидкостное охлаждение и впрыск EFI обеспечивают надёжную мощность и крутящий момент на любом покрытии.',
-      pt: 'A HECOTH F450 é uma moto a combustão robusta de 450cc projetada para aventura e deslocamentos diários. O motor EFI refrigerado a líquido oferece potência e binário confiáveis em todos os terrenos.'
+      en: 'The WY150 is a rugged 150cc air-cooled 4-stroke street bike built for daily commuting and utility use. Featuring a 5-speed international gearbox, CDI ignition, electric/kick start, front disc + rear drum brakes, a 11.5L fuel tank and a sturdy rear luggage rack, it delivers reliable performance, low fuel consumption and easy maintenance. MOQ 30 units — ideal for wholesale importers in Brazil, Africa, Latin America and the Middle East.',
+      es: 'La WY150 es una moto de calle robusta de 150cc, 4 tiempos refrigerada por aire, diseñada para desplazamientos diarios y uso utilitario. Con caja internacional de 5 velocidades, encendido CDI, arranque eléctrico/pedal, freno de disco delantero + tambor trasero, depósito de 11.5L y portaequipajes trasero resistente, ofrece rendimiento fiable, bajo consumo y fácil mantenimiento. MOQ 30 unidades — ideal para importadores de Brasil, África, América Latina y Oriente Medio.',
+      fr: 'La WY150 est une moto de route robuste 150cc, 4 temps refroidie par air, conçue pour les trajets quotidiens et l\'usage utilitaire. Avec boîte internationale 5 vitesses, allumage CDI, démarrage électrique/kick, frein à disque avant + tambour arrière, réservoir 11.5L et porte-bagages arrière solide, elle offre des performances fiables, une faible consommation et un entretien facile. MOQ 30 unités — idéale pour les importateurs au Brésil, en Afrique, en Amérique latine et au Moyen-Orient.',
+      ar: 'WY150 هي دراجة نارية قوية للشارع بسعة 150 سي سي، رباعية الأشواط مبردة بالهواء، مصممة للتنقل اليومي والاستخدام العملي. مزودة بعلبة دولية 5 سرعات، وإشعال CDI، وبدء كهربائي/بالقدم، وفرامل قرصية أمامية + طبلية خلفية، وخزان 11.5 لتر، وحمالة أمتعة خلفية متينة، وتوفر أداءً موثوقاً واستهلاكاً منخفضاً للوقود وسهولة في الصيانة. الحد الأدنى 30 وحدة — مثالية لمستوردي البرازيل وأفريقيا وأمريكا اللاتينية والشرق الأوسط.',
+      ru: 'WY150 — прочный 150-кубовый 4-тактный уличный мотоцикл с воздушным охлаждением, созданный для ежедневных поездок и утилитарного использования. Оснащён 5-ступенчатой международной КПП, зажиганием CDI, электро/кик-стартером, передним дисковым + задним барабанным тормозом, баком 11.5 л и прочным задним багажником — обеспечивает надёжную работу, низкий расход топлива и простое обслуживание. MOQ 30 шт. — идеален для оптовых импортёров Бразилии, Африки, Латинской Америки и Ближнего Востока.',
+      pt: 'A WY150 é uma moto de rua robusta 150cc, 4 tempos refrigerada a ar, projetada para deslocamentos diários e uso utilitário. Com caixa internacional de 5 velocidades, ignição CDI, arranque elétrico/pedal, travão de disco dianteiro + tambor traseiro, depósito de 11.5L e bagageira traseira resistente, oferece desempenho fiável, baixo consumo e fácil manutenção. MOQ 30 unidades — ideal para importadores no Brasil, África, América Latina e Médio Oriente.'
     },
     highlights: {
-      en: ['450cc liquid-cooled engine', 'Electronic fuel injection', 'Aggressive off-road styling', 'Digital dashboard', 'LED lighting'],
-      es: ['Motor 450cc refrigerado por líquido', 'Inyección electrónica de combustible', 'Estilo agresivo off-road', 'Panel digital', 'Iluminación LED'],
-      fr: ['Moteur 450cc refroidi par liquide', 'Injection électronique', 'Style off-road agressif', 'Tableau de bord numérique', 'Éclairage LED'],
-      ar: ['محرك 450 سي سي مبرد بالسائل', 'حقن إلكتروني للوقود', 'تصميم off-road جريء', 'لوحة عدادات رقمية', 'إضاءة LED'],
-      ru: ['450-кубовый двигатель с жидкостным охлаждением', 'Электронный впрыск топлива', 'Агрессивный внедорожный стиль', 'Цифровая приборная панель', 'LED-освещение'],
-      pt: ['Motor 450cc refrigerado a líquido', 'Injeção eletrónica de combustível', 'Estilo off-road agressivo', 'Painel digital', 'Iluminação LED']
+      en: ['150cc 4-stroke air-cooled engine', '8.2KW / 8000rpm max power, 10N.m / 7500rpm max torque', 'International 5-speed manual gearbox', 'Electric / kick start + CDI ignition', 'Front disc + rear drum brake', '11.5L fuel tank — low consumption for daily commute', 'Sturdy rear luggage rack — practical for utility use', 'Lightweight 120 kg, max loading 150 kg', 'MOQ 30 units — perfect for Brazil, Nigeria, Peru, UAE, Algeria importers'],
+      es: ['Motor 150cc 4T refrigerado por aire', 'Potencia máxima 8.2KW / 8000rpm, par máximo 10N.m / 7500rpm', 'Caja manual internacional de 5 velocidades', 'Arranque eléctrico/pedal + encendido CDI', 'Freno disco delantero + tambor trasero', 'Depósito de 11.5L — bajo consumo para uso diario', 'Portaequipajes trasero resistente — práctico para uso utilitario', 'Ligera 120 kg, carga máxima 150 kg', 'MOQ 30 unidades — para importadores de Brasil, Nigeria, Perú, EAU, Argelia'],
+      fr: ['Moteur 150cc 4T refroidi par air', 'Puissance max 8.2KW / 8000rpm, couple max 10N.m / 7500rpm', 'Boîte manuelle internationale 5 vitesses', 'Démarrage électrique/kick + allumage CDI', 'Frein à disque avant + tambour arrière', 'Réservoir 11.5L — faible consommation pour les trajets quotidiens', 'Porte-bagages arrière solide — pratique pour l\'usage utilitaire', 'Légère 120 kg, charge max 150 kg', 'MOQ 30 unités — pour importateurs Brésil, Nigeria, Pérou, EAU, Algérie'],
+      ar: ['محرك 150 سي سي 4 أشواط مبرد بالهواء', 'قوة قصوى 8.2 كيلوواط / 8000 دورة، عزم أقصى 10 نيوتن.متر / 7500 دورة', 'علبة يدوية دولية 5 سرعات', 'بدء كهربائي/بالقدم + إشعال CDI', 'فرامل قرصية أمامية + طبلية خلفية', 'خزان 11.5 لتر — استهلاك منخفض للاستخدام اليومي', 'حمالة أمتعة خلفية متينة — عملية للاستخدام اليومي', 'خفيفة 120 كجم، حمولة قصوى 150 كجم', 'الحد الأدنى 30 وحدة — لمستوردي البرازيل ونيجيريا وبيرو والإمارات والجزائر'],
+      ru: ['Двигатель 150cc 4T с воздушным охлаждением', 'Макс. мощность 8.2 кВт / 8000 об/мин, макс. крутящий момент 10 Н·м / 7500 об/мин', 'Международная 5-ступенчатая МКПП', 'Электро/кик-стартер + зажигание CDI', 'Передний дисковый + задний барабанный тормоз', 'Бак 11.5 л — низкий расход для ежедневных поездок', 'Прочный задний багажник — практичен в быту', 'Лёгкий 120 кг, макс. нагрузка 150 кг', 'MOQ 30 шт. — для импортёров Бразилии, Нигерии, Перу, ОАЭ, Алжира'],
+      pt: ['Motor 150cc 4T refrigerado a ar', 'Potência máx 8.2KW / 8000rpm, binário máx 10N.m / 7500rpm', 'Caixa manual internacional de 5 velocidades', 'Arranque elétrico/pedal + ignição CDI', 'Travão de disco dianteiro + tambor traseiro', 'Depósito de 11.5L — baixo consumo para uso diário', 'Bagageira traseira resistente — prática para uso utilitário', 'Leve 120 kg, carga máxima 150 kg', 'MOQ 30 unidades — para importadores do Brasil, Nigéria, Peru, EAU, Argélia']
     },
     specs: {
-      'Engine': '450cc single-cylinder, liquid-cooled',
-      'Power': '38 HP @ 8500 rpm',
-      'Torque': '35 Nm @ 6500 rpm',
-      'Fuel System': 'EFI',
-      'Transmission': '6-speed',
-      'Weight': '165 kg',
-      'Seat Height': '890 mm',
-      'Fuel Capacity': '14 L',
-      'Brakes': 'Disc front & rear',
-      'MOQ': '10 units',
-      'Lead Time': '50 days',
-      'Warranty': '24 months'
+      'Model': 'WY150',
+      'Engine Type': '4 stroke, single cylinder, air cooling',
+      'Displacement': '150cc',
+      'Max. Power': '8.2KW / 8000r/min',
+      'Max. Torque': '10N.m / 7500r/min',
+      'Cooling Type': 'Air cooling',
+      'Fuel Delivery': 'Carburetor',
+      'Start Method': 'Electric / kick',
+      'Clutch': 'Manual',
+      'Gear': 'International 5 gears',
+      'Ignition Method': 'CDI',
+      'Max. Speed': '>100 km/h',
+      'L*W*H': '2070 × 920 × 1280 mm',
+      'Wheel Base': '1300 mm',
+      'Seat Height': '820 mm',
+      'Vehicle Weight': '120 kg',
+      'Max. Loading': '150 kg',
+      'Front / Rear Brake': 'Disk / drum',
+      'Fuel Tank Volume': '11.5 L',
+      'Front / Rear Tyre': 'Front 2.75-18, Rear 3.0-18',
+      'Min. Ground Clearance': '150 mm',
+      'Battery': '12V 6.5A',
+      'MOQ': '30 units',
+      'Packing Term': 'Standard exporting packaging',
+      'Shipping': 'By sea',
+      'Delivery Time': 'Within 30–45 days after prepayment',
+      'Lead Time': '30–45 days'
     },
-    keywords: 'fuel motorcycle, 450cc motorcycle, EFI, off-road motorcycle, B2B fuel motorcycle'
+    keywords: 'WY150, WY150 street bike, 150cc street motorcycle, 150cc commuter motorcycle, 150cc utility motorcycle, 150cc street bike wholesale, 150cc motorcycle supplier China, commuter bike factory price, bulk 150cc street bike order, OEM 150cc motorcycle, motorcycle MOQ 30, 150cc street bike for Brazil, Africa 150cc motorcycle importer, 4 stroke street bike, air cooled street motorcycle, front disc rear drum brake motorcycle, 11.5L fuel tank street bike, motorcycle with rear rack'
   },
 
   /* ================= Parts Pro ================= */
@@ -490,5 +505,71 @@ window.PRODUCTS = {
       'Lead Time': '30–45 days'
     },
     keywords: 'YFY250/200 PY, 250cc dirt bike, 200cc dirt bike, 250cc enduro motorcycle, dual displacement dirt bike, 250cc dirt bike wholesale, 250cc dirt bike supplier China, enduro motorcycle supplier, Brazil dirt bike, Africa dirt bike importer, OEM dirt bike, MOQ 30 dirt bike, 4 stroke dirt bike, air cooled dirt bike, 5 speed dirt bike, 14L fuel tank dirt bike, front rear disc brake dirt bike, off-road racing motorcycle'
+  },
+    /* ================= YFY250R Street Motorcycle ================= */
+  'yfy250r': {
+    id: 'yfy250r',
+    category: 'fuel',
+    icon: 'fa-motorcycle',
+    image: 'assets/images/yfy250r-main.jpg',
+    gallery: [
+      'assets/images/yfy250r-1.jpg',
+      'assets/images/yfy250r-2.jpg',
+      'assets/images/yfy250r-3.jpg'
+    ],
+    name: {
+      en: 'YFY250R Street Motorcycle',
+      es: 'YFY250R Moto de Calle',
+      fr: 'YFY250R Moto de Route',
+      ar: 'YFY250R دراجة نارية للشارع',
+      ru: 'YFY250R Уличный мотоцикл',
+      pt: 'YFY250R Moto de Rua'
+    },
+    description: {
+      en: 'The YFY250R is a modern 250cc air-cooled 4-stroke street motorcycle designed for urban commuting and daily utility. Featuring a 6-speed international gearbox, CDI ignition, electric start, front and rear disc brakes and a 13L fuel tank, it delivers an ideal blend of power, agility and reliability. With a low seat height of 800mm and lightweight 140kg chassis, it is perfect for city riders and fleet operators. MOQ 30 units — great for wholesale importers in Brazil, Africa, Latin America and the Middle East.',
+      es: 'La YFY250R es una moto de calle moderna de 250cc, 4 tiempos refrigerada por aire, diseñada para desplazamientos urbanos y uso diario. Con caja internacional de 6 velocidades, encendido CDI, arranque eléctrico, frenos de disco delantero y trasero y depósito de 13L, ofrece una combinación ideal de potencia, agilidad y fiabilidad. Con una altura de asiento de 800mm y chasis ligero de 140kg, es perfecta para motociclistas urbanos y flotas. MOQ 30 unidades — excelente para importadores de Brasil, África, América Latina y Oriente Medio.',
+      fr: 'La YFY250R est une moto de route moderne 250cc, 4 temps refroidie par air, conçue pour les trajets urbains et l\'usage quotidien. Avec boîte internationale 6 vitesses, allumage CDI, démarrage électrique, freins à disque avant et arrière et réservoir 13L, elle offre un mélange idéal de puissance, d\'agilité et de fiabilité. Avec une hauteur de selle de 800mm et un châssis léger de 140kg, elle est parfaite pour les motards urbains et les flottes. MOQ 30 unités — excellent pour les importateurs au Brésil, en Afrique, en Amérique latine et au Moyen-Orient.',
+      ar: 'YFY250R هي دراجة نارية حديثة للشارع بسعة 250 سي سي، رباعية الأشواط مبردة بالهواء، مصممة للتنقل الحضري والاستخدام اليومي. مزودة بعلبة دولية 6 سرعات وإشعال CDI وبدء كهربائي وفرامل قرصية أمامية وخلفية وخزان 13 لتر، وتوفر مزيجاً مثالياً من القوة والرشاقة والموثوقية. مع ارتفاع مقعد منخفض 800 مم وهيكل خفيف 140 كجم، فهي مثالية لسائقي المدن وأساطيل التوصيل. الحد الأدنى 30 وحدة — ممتازة لمستوردي البرازيل وأفريقيا وأمريكا اللاتينية والشرق الأوسط.',
+      ru: 'YFY250R — современный 250-кубовый 4-тактный уличный мотоцикл с воздушным охлаждением, созданный для городских поездок и повседневного использования. Оснащён 6-ступенчатой международной КПП, зажиганием CDI, электростартером, передними и задними дисковыми тормозами и баком 13 л, обеспечивает идеальный баланс мощности, маневренности и надёжности. Низкая высота сиденья 800 мм и лёгкое шасси 140 кг делают его идеальным для городских райдеров и курьерских парков. MOQ 30 шт. — отлично подходит для оптовых импортёров Бразилии, Африки, Латинской Америки и Ближнего Востока.',
+      pt: 'A YFY250R é uma moto de rua moderna 250cc, 4 tempos refrigerada a ar, projetada para deslocamentos urbanos e uso diário. Com caixa internacional de 6 velocidades, ignição CDI, arranque elétrico, travões de disco dianteiro e traseiro e depósito de 13L, oferece uma combinação ideal de potência, agilidade e fiabilidade. Com altura do assento de 800mm e chassis leve de 140kg, é perfeita para motociclistas urbanos e frotas. MOQ 30 unidades — excelente para importadores no Brasil, África, América Latina e Médio Oriente.'
+    },
+    highlights: {
+      en: ['250cc 4-stroke air-cooled engine (150cc / 200cc optional)', '12.5KW / 8000rpm max power, 17N.m / 6500rpm max torque', 'International 6-speed manual gearbox', 'Electric start + CDI ignition', 'Front & rear disc brakes — superior stopping power', '13L fuel tank — long range for daily commute', 'Low seat height 800mm — perfect for city riders', 'Lightweight 140 kg, max loading 150 kg', 'MOQ 30 units — ideal for Brazil, Nigeria, Peru, UAE, Algeria importers'],
+      es: ['Motor 250cc 4T refrigerado por aire (150cc/200cc opcional)', 'Potencia máxima 12.5KW / 8000rpm, par máximo 17N.m / 6500rpm', 'Caja manual internacional de 6 velocidades', 'Arranque eléctrico + encendido CDI', 'Frenos de disco delantero y trasero — mayor potencia de frenado', 'Depósito de 13L — gran autonomía para uso diario', 'Altura de asiento baja 800mm — perfecta para la ciudad', 'Ligera 140 kg, carga máxima 150 kg', 'MOQ 30 unidades — ideal para importadores de Brasil, Nigeria, Perú, EAU, Argelia'],
+      fr: ['Moteur 250cc 4T refroidi par air (150cc/200cc en option)', 'Puissance max 12.5KW / 8000rpm, couple max 17N.m / 6500rpm', 'Boîte manuelle internationale 6 vitesses', 'Démarrage électrique + allumage CDI', 'Freins à disque avant et arrière — freinage supérieur', 'Réservoir 13L — longue autonomie pour les trajets quotidiens', 'Hauteur de selle basse 800mm — parfaite pour la ville', 'Légère 140 kg, charge max 150 kg', 'MOQ 30 unités — idéale pour importateurs Brésil, Nigeria, Pérou, EAU, Algérie'],
+      ar: ['محرك 250 سي سي 4 أشواط مبرد بالهواء (150/200 اختياري)', 'قوة قصوى 12.5 كيلوواط / 8000 دورة، عزم أقصى 17 نيوتن.متر / 6500 دورة', 'علبة يدوية دولية 6 سرعات', 'بدء كهربائي + إشعال CDI', 'فرامل قرصية أمامية وخلفية — قوة توقف فائقة', 'خزان 13 لتر — مدى طويل للاستخدام اليومي', 'ارتفاع مقعد منخفض 800 مم — مثالي لسائقي المدن', 'خفيفة 140 كجم، حمولة قصوى 150 كجم', 'الحد الأدنى 30 وحدة — لمستوردي البرازيل ونيجيريا وبيرو والإمارات والجزائر'],
+      ru: ['Двигатель 250cc 4T с воздушным охлаждением (150/200cc опционально)', 'Макс. мощность 12.5 кВт / 8000 об/мин, макс. крутящий момент 17 Н·м / 6500 об/мин', 'Международная 6-ступенчатая МКПП', 'Электростартер + зажигание CDI', 'Передние и задние дисковые тормоза — превосходное торможение', 'Бак 13 л — большой запас хода для ежедневных поездок', 'Низкая высота сиденья 800 мм — идеально для города', 'Лёгкий 140 кг, макс. нагрузка 150 кг', 'MOQ 30 шт. — для импортёров Бразилии, Нигерии, Перу, ОАЭ, Алжира'],
+      pt: ['Motor 250cc 4T refrigerado a ar (150cc/200cc opcional)', 'Potência máx 12.5KW / 8000rpm, binário máx 17N.m / 6500rpm', 'Caixa manual internacional de 6 velocidades', 'Arranque elétrico + ignição CDI', 'Travões de disco dianteiro e traseiro — travagem superior', 'Depósito de 13L — longa autonomia para uso diário', 'Altura do assento baixa 800mm — perfeita para a cidade', 'Leve 140 kg, carga máxima 150 kg', 'MOQ 30 unidades — para importadores do Brasil, Nigéria, Peru, EAU, Argélia']
+    },
+    specs: {
+      'Model': 'YFY250R',
+      'Engine Type': '4 stroke, single cylinder, air cooling',
+      'Displacement': '250cc (150cc / 200cc optional)',
+      'Max. Power': '12.5KW / 8000rpm',
+      'Max. Torque': '17N.m / 6500r/min',
+      'Cooling Type': 'Air cooling',
+      'Fuel Delivery': 'Carburetor',
+      'Start Method': 'Electric',
+      'Clutch': 'Manual',
+      'Gear': 'International 6 gears',
+      'Ignition Method': 'CDI',
+      'Max. Speed': '>100 km/h',
+      'L*W*H': '1980 × 780 × 1150 mm',
+      'Wheel Base': '1330 mm',
+      'Seat Height': '800 mm',
+      'Vehicle Weight': '140 kg',
+      'Max. Loading': '150 kg',
+      'Front / Rear Brake': 'Disk / disk',
+      'Fuel Tank Volume': '13 L',
+      'Front / Rear Tyre': '110/70-17, 140/70-17',
+      'Min. Ground Clearance': '180 mm',
+      'Battery': '12V 6.5A',
+      'MOQ': '30 units',
+      'Packing Term': 'Standard exporting packaging',
+      'Shipping': 'By sea',
+      'Delivery Time': 'Within 30–45 days after prepayment',
+      'Lead Time': '30–45 days'
+    },
+    keywords: 'YFY250R, 250cc street motorcycle, 250cc naked bike, 250cc sport street bike, 250cc commuter motorcycle, 6 speed street motorcycle, 250cc street motorcycle wholesale, 250cc street bike supplier China, street motorcycle MOQ 30, 250cc street motorcycle for Brazil, Africa street bike importer, OEM 250cc motorcycle, 4 stroke street bike, air cooled street motorcycle, front rear disc brake motorcycle, 13L fuel tank street bike'
   },
 };
