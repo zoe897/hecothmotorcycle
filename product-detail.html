@@ -41,7 +41,7 @@
     // 从多语言字段里取值（兼容旧版字符串字段）
     function pick(field, lang) {
       if (field === null || field === undefined) return '';
-      if (typeof field === 'string') return field; // 兼容旧的纯字符串
+      if (typeof field === 'string') return field;
       return field[lang] || field.en || '';
     }
 
@@ -68,8 +68,8 @@
       let titleSuffix = ' · B2B Wholesale Supplier · HECOTH';
       if (p.id === 'e4' || p.id === 'street-ev') {
         titleSuffix = ' Electric · B2B Wholesale Supplier · HECOTH';
-      } else if (p.id.startsWith('yfy200')) {
-        titleSuffix = ' 200cc · B2B Wholesale Supplier · HECOTH';
+      } else if (p.id.startsWith('yfy200') || p.id.startsWith('yfy150') || p.id.startsWith('yfy250')) {
+        titleSuffix = ' Motorcycle · B2B Wholesale Supplier · HECOTH';
       }
       document.title = productName + titleSuffix;
 
@@ -92,17 +92,22 @@
         `<li class="flex items-start gap-2"><i class="fas fa-check-circle text-gold mt-0.5"></i> <span>${h}</span></li>`
       ).join('');
 
+      // ===== 主图（加 id） =====
       const mainImg = `
-        <img src="${p.image}"
+        <img id="productMainImg"
+             src="${p.image}"
              alt="${productName} - B2B wholesale supplier China"
-             class="w-full rounded-xl"
+             class="w-full rounded-xl transition-opacity duration-300"
              onerror="this.onerror=null; this.src='assets/images/placeholder.svg';" />
       `;
 
+      // ===== 缩略图（加 data-index / data-src） =====
       const galleryHtml = p.gallery.map((img, i) =>
         `<img src="${img}"
               alt="${productName} - view ${i + 1} - B2B manufacturer"
-              class="w-28 h-20 object-cover cursor-pointer"
+              class="thumb-img w-28 h-20 object-cover cursor-pointer rounded-lg border-2 border-transparent transition-all duration-200"
+              data-index="${i}"
+              data-src="${img}"
               loading="lazy"
               onerror="this.onerror=null; this.src='assets/images/placeholder.svg';" />`
       ).join('');
@@ -221,11 +226,50 @@
         </div>
       `;
 
+      // 应用多语言到 UI
       if (dict) {
         container.querySelectorAll('[data-i18n]').forEach(el => {
           const k = el.dataset.i18n;
           if (dict[k] !== undefined) el.textContent = dict[k];
         });
+      }
+
+      // =========================================================
+      // 缩略图点击切换主图
+      // =========================================================
+      const mainImgEl = document.getElementById('productMainImg');
+      const thumbs = container.querySelectorAll('.thumb-img');
+
+      thumbs.forEach(thumb => {
+        thumb.addEventListener('click', function () {
+          const newSrc = this.dataset.src;
+          if (!mainImgEl || !newSrc) return;
+
+          // 淡出 → 换图 → 淡入
+          mainImgEl.style.opacity = '0';
+          setTimeout(() => {
+            mainImgEl.src = newSrc;
+            mainImgEl.onerror = function () {
+              this.onerror = null;
+              this.src = 'assets/images/placeholder.svg';
+            };
+            mainImgEl.style.opacity = '1';
+          }, 200);
+
+          // 高亮切换
+          thumbs.forEach(t => {
+            t.classList.remove('border-gold');
+            t.classList.add('border-transparent');
+          });
+          this.classList.remove('border-transparent');
+          this.classList.add('border-gold');
+        });
+      });
+
+      // 默认高亮第一张
+      if (thumbs.length > 0) {
+        thumbs[0].classList.remove('border-transparent');
+        thumbs[0].classList.add('border-gold');
       }
     }
 
