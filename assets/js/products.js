@@ -202,53 +202,507 @@ window.PRODUCTS = {
   },
 
   /* ================= Parts Pro ================= */
-  parts: {
-    id: 'parts',
+    /* ============================================================
+     摩托车配件系列（10 款主推出口配件）
+     ============================================================ */
+
+  /* ---------------- 1. 链条/链轮套件 ---------------- */
+  'parts-chain-sprocket': {
+    id: 'parts-chain-sprocket',
     category: 'parts',
-    icon: 'fa-cogs',
-    image: 'assets/images/parts-main.jpg',
+    icon: 'fa-link',
+    image: 'assets/images/parts-chain-sprocket.jpg',
     gallery: [
-      'assets/images/parts-1.jpg',
-      'assets/images/parts-2.jpg',
-      'assets/images/parts-3.jpg'
+      'assets/images/parts-chain-sprocket-1.jpg',
+      'assets/images/parts-chain-sprocket-2.jpg',
+      'assets/images/parts-chain-sprocket-3.jpg'
     ],
     name: {
-      en: 'HECOTH Parts Pro',
-      es: 'HECOTH Parts Pro',
-      fr: 'HECOTH Parts Pro',
-      ar: 'هيكوث قطع الغيار برو',
-      ru: 'HECOTH Parts Pro',
-      pt: 'HECOTH Parts Pro'
+      en: 'Motorcycle Chain & Sprocket Kit',
+      es: 'Kit de Cadena y Piñón para Moto',
+      fr: 'Kit Chaîne et Pignon Moto',
+      ar: 'طقم سلسلة وترس الدراجة النارية',
+      ru: 'Комплект цепи и звёздочек для мотоцикла',
+      pt: 'Kit de Corrente e Pinhão para Moto'
     },
     description: {
-      en: 'HECOTH Parts Pro offers a comprehensive range of OEM-quality motorcycle components. From sintered brake pads to O-ring chain kits and DRL LED lighting, we supply dealers worldwide.',
-      es: 'HECOTH Parts Pro ofrece una gama completa de componentes de moto con calidad OEM. Desde pastillas de freno sinterizadas hasta kits de cadena O-ring e iluminación LED DRL, suministramos a distribuidores de todo el mundo.',
-      fr: 'HECOTH Parts Pro propose une gamme complète de composants moto de qualité OEM. Des plaquettes de frein frittées aux kits de chaîne O-ring et éclairages LED DRL, nous approvisionnons les revendeurs du monde entier.',
-      ar: 'تقدم هيكوث قطع الغيار برو مجموعة شاملة من مكونات الدراجات بجودة OEM. من وسادات الفرامل الملبدة إلى أطقم السلاسل O-ring وإضاءة LED DRL، نوفر للوكلاء في جميع أنحاء العالم.',
-      ru: 'HECOTH Parts Pro предлагает широкий ассортимент мотоциклетных компонентов OEM-качества. От спечённых тормозных колодок до O-ring цепных комплектов и DRL LED-освещения — мы снабжаем дилеров по всему миру.',
-      pt: 'A HECOTH Parts Pro oferece uma gama completa de componentes de moto com qualidade OEM. De pastilhas de travão sinterizadas a kits de corrente O-ring e iluminação LED DRL, fornecemos concessionários em todo o mundo.'
+      en: 'High-strength motorcycle chain and sprocket kit, compatible with CG125, WAVE125, GN125, AX100 and other popular models. Made of 428H / 420 / 520 high-strength alloy steel, front 14T / rear 36T-42T customizable. Ideal for wholesale importers in South Africa, Nigeria, Malaysia, Brazil and the USA.',
+      es: 'Kit de cadena y piñón de moto de alta resistencia, compatible con CG125, WAVE125, GN125, AX100 y otros modelos populares. Fabricado en acero de alta resistencia 428H / 420 / 520, piñón delantero 14T / trasero 36T-42T personalizable. Ideal para importadores mayoristas en Sudáfrica, Nigeria, Malasia, Brasil y EE.UU.',
+      fr: 'Kit chaîne et pignon moto haute résistance, compatible avec CG125, WAVE125, GN125, AX100 et autres modèles populaires. Fabriqué en acier haute résistance 428H / 420 / 520, pignon avant 14T / arrière 36T-42T personnalisable. Idéal pour les importateurs grossistes en Afrique du Sud, Nigeria, Malaisie, Brésil et États-Unis.',
+      ar: 'طقم سلسلة وترس دراجة نارية عالي القوة، متوافق مع CG125 وWAVE125 وGN125 وAX100 وغيرها من الطرازات الشائعة. مصنوع من فولاذ عالي القوة 428H / 420 / 520، ترس أمامي 14T / خلفي 36T-42T قابل للتخصيص. مثالي للمستوردين بالجملة في جنوب أفريقيا ونيجيريا وماليزيا والبرازيل والولايات المتحدة.',
+      ru: 'Высокопрочный комплект цепи и звёздочек для мотоцикла, совместим с CG125, WAVE125, GN125, AX100 и другими популярными моделями. Изготовлен из высокопрочной стали 428H / 420 / 520, передняя 14T / задняя 36T-42T под заказ. Идеален для оптовых импортёров в ЮАР, Нигерии, Малайзии, Бразилии и США.',
+      pt: 'Kit de corrente e pinhão de moto de alta resistência, compatível com CG125, WAVE125, GN125, AX100 e outros modelos populares. Fabricado em aço de alta resistência 428H / 420 / 520, pinhão dianteiro 14T / traseiro 36T-42T personalizável. Ideal para importadores grossistas na África do Sul, Nigéria, Malásia, Brasil e EUA.'
     },
     highlights: {
-      en: ['200+ SKU in stock', 'OEM-grade materials', 'Sintered brake pads', 'O-ring chain kits', 'DRL LED headlights'],
-      es: ['200+ SKU en stock', 'Materiales de grado OEM', 'Pastillas de freno sinterizadas', 'Kits de cadena O-ring', 'Faros LED DRL'],
-      fr: ['200+ SKU en stock', 'Matériaux qualité OEM', 'Plaquettes de frein frittées', 'Kits de chaîne O-ring', 'Phares LED DRL'],
-      ar: ['أكثر من 200 صنف في المخزون', 'مواد بجودة OEM', 'وسادات فرامل ملبدة', 'أطقم سلاسل O-ring', 'مصابيح LED DRL'],
-      ru: ['200+ SKU на складе', 'Материалы уровня OEM', 'Спечённые тормозные колодки', 'O-ring цепные комплекты', 'DRL LED-фары'],
-      pt: ['200+ SKU em stock', 'Materiais de qualidade OEM', 'Pastilhas sinterizadas', 'Kits de corrente O-ring', 'Faróis LED DRL']
+      en: ['428H / 420 / 520 high-strength alloy steel', 'Front 14T / Rear 36T-42T customizable', 'Tensile strength ≥18KN', 'Black / Zinc anti-rust treatment', 'Fits CG125, WAVE125, GN125, AX100', 'MOQ 50 sets', 'ISO 9001 certified', 'Top export transmission part for Africa & SEA'],
+      es: ['Acero de alta resistencia 428H / 420 / 520', 'Delantero 14T / Trasero 36T-42T personalizable', 'Resistencia a la tracción ≥18KN', 'Tratamiento antioxidante negro / zinc', 'Compatible con CG125, WAVE125, GN125, AX100', 'MOQ 50 juegos', 'Certificación ISO 9001', 'Pieza de transmisión de exportación top para África y SEA'],
+      fr: ['Acier haute résistance 428H / 420 / 520', 'Avant 14T / Arrière 36T-42T personnalisable', 'Résistance à la traction ≥18KN', 'Traitement antirouille noir / zinc', 'Compatible CG125, WAVE125, GN125, AX100', 'MOQ 50 ensembles', 'Certifié ISO 9001', 'Pièce de transmission export top pour Afrique et SEA'],
+      ar: ['فولاذ عالي القوة 428H / 420 / 520', 'أمامي 14T / خلفي 36T-42T قابل للتخصيص', 'قوة شد ≥18KN', 'معالجة مضادة للصدأ أسود / زنك', 'متوافق مع CG125 وWAVE125 وGN125 وAX100', 'الحد الأدنى 50 طقم', 'معتمد ISO 9001', 'قطعة نقل تصدير أساسية لأفريقيا وجنوب شرق آسيا'],
+      ru: ['Высокопрочная сталь 428H / 420 / 520', 'Передняя 14T / задняя 36T-42T под заказ', 'Прочность на разрыв ≥18KN', 'Антикоррозийная обработка чёрная / цинк', 'Совместим с CG125, WAVE125, GN125, AX100', 'MOQ 50 комплектов', 'Сертификат ISO 9001', 'Топовая экспортная трансмиссионная деталь для Африки и ЮВА'],
+      pt: ['Aço de alta resistência 428H / 420 / 520', 'Dianteiro 14T / Traseiro 36T-42T personalizável', 'Resistência à tração ≥18KN', 'Tratamento antiferrugem preto / zinco', 'Compatível com CG125, WAVE125, GN125, AX100', 'MOQ 50 conjuntos', 'Certificado ISO 9001', 'Peça de transmissão de exportação top para África e SEA']
     },
     specs: {
-      'Brake Pads': 'Sintered, high-friction',
-      'Chain Kit': '520 O-ring, 120 links',
-      'LED Headlight': 'DRL, 6000K, IP67',
-      'Air Filter': 'High-flow, washable',
-      'Spark Plug': 'Iridium, long-life',
-      'Sprockets': 'Hardened steel, 15T/45T',
-      'Bearings': 'Sealed, ABEC-3',
-      'MOQ': '50 units per SKU',
-      'Lead Time': '30 days',
-      'Warranty': '12 months'
+      'Specification': '428H / 420 / 520 High Strength Alloy Steel',
+      'Teeth': 'Front 14T / Rear 36T-42T Customizable',
+      'Tensile Strength': '≥18KN',
+      'Surface': 'Black / Zinc Anti-rust Treatment',
+      'Fit Model': 'CG125, WAVE125, GN125, AX100',
+      'MOQ': '50 Sets',
+      'Certification': 'ISO 9001',
+      'Lead Time': '7–15 Working Days',
+      'Trade Term': 'EXW / FOB / CIF / DDP',
+      'Packing Term': 'Standard exporting packaging',
+      'Shipping': 'By sea'
     },
-    keywords: 'motorcycle parts, brake pads, chain kit, LED headlight, OEM motorcycle parts, B2B parts supplier'
+    keywords: 'motorcycle chain sprocket kit, CG125 chain sprocket, 428H chain kit, motorcycle transmission parts, chain sprocket wholesale, China motorcycle parts supplier, South Africa motorcycle parts, Nigeria motorcycle chain, WAVE125 sprocket kit, GN125 chain kit'
+  },
+
+  /* ---------------- 2. 缸体活塞套件 ---------------- */
+  'parts-cylinder-piston': {
+    id: 'parts-cylinder-piston',
+    category: 'parts',
+    icon: 'fa-cog',
+    image: 'assets/images/parts-cylinder-piston.jpg',
+    gallery: [
+      'assets/images/parts-cylinder-piston-1.jpg',
+      'assets/images/parts-cylinder-piston-2.jpg',
+      'assets/images/parts-cylinder-piston-3.jpg'
+    ],
+    name: {
+      en: 'Motorcycle Cylinder Piston Kit',
+      es: 'Kit de Cilindro y Pistón para Moto',
+      fr: 'Kit Cylindre et Piston Moto',
+      ar: 'طقم أسطوانة ومكبس الدراجة النارية',
+      ru: 'Комплект цилиндра и поршня для мотоцикла',
+      pt: 'Kit de Cilindro e Pistão para Moto'
+    },
+    description: {
+      en: 'Engine overhaul cylinder piston kit for CG125 and other popular models. Aluminum alloy cylinder with cast iron liner, high wear resistance. Full set includes cylinder, piston, ring, pin, circlip and gasket. Ideal for engine rebuild and aftermarket replacement in Africa and Southeast Asia.',
+      es: 'Kit de cilindro y pistón para revisión de motor CG125 y otros modelos populares. Cilindro de aleación de aluminio con camisa de hierro fundido, alta resistencia al desgaste. El conjunto completo incluye cilindro, pistón, anillo, pasador, circlip y junta. Ideal para reconstrucción de motores y reemplazo aftermarket en África y Sudeste Asiático.',
+      fr: 'Kit cylindre et piston pour révision moteur CG125 et autres modèles populaires. Cylindre en alliage d\'aluminium avec chemise en fonte, haute résistance à l\'usure. L\'ensemble complet comprend cylindre, piston, segment, axe, circlip et joint. Idéal pour la reconstruction moteur et le remplacement aftermarket en Afrique et en Asie du Sud-Est.',
+      ar: 'طقم أسطوانة ومكبس لإصلاح محرك CG125 وطرازات شائعة أخرى. أسطوانة من سبائك الألومنيوم مع بطانة من الحديد الزهر، مقاومة عالية للتآكل. تشمل المجموعة الكاملة الأسطوانة والمكبس والحلقة والمسمار والمشبك والحشية. مثالي لإعادة بناء المحرك والاستبدال بعد البيع في أفريقيا وجنوب شرق آسيا.',
+      ru: 'Комплект цилиндра и поршня для капитального ремонта двигателя CG125 и других популярных моделей. Алюминиевый цилиндр с чугунной гильзой, высокая износостойкость. Полный комплект включает цилиндр, поршень, кольцо, палец, стопорное кольцо и прокладку. Идеален для капремонта двигателя и замены на вторичном рынке в Африке и Юго-Восточной Азии.',
+      pt: 'Kit de cilindro e pistão para revisão de motor CG125 e outros modelos populares. Cilindro em liga de alumínio com camisa de ferro fundido, alta resistência ao desgaste. O conjunto completo inclui cilindro, pistão, anel, pino, circlip e junta. Ideal para reconstrução de motor e substituição aftermarket em África e Sudeste Asiático.'
+    },
+    highlights: {
+      en: ['Bore size 52.4mm (CG125)', 'Aluminum alloy cylinder + cast iron liner', 'Full set: cylinder, piston, ring, pin, circlip, gasket', 'Compression ratio 9:1', 'High wear resistance', 'MOQ 20 sets', 'Perfect for engine overhaul in Africa & SEA'],
+      es: ['Diámetro interior 52.4mm (CG125)', 'Cilindro de aleación de aluminio + camisa de hierro fundido', 'Conjunto completo: cilindro, pistón, anillo, pasador, circlip, junta', 'Relación de compresión 9:1', 'Alta resistencia al desgaste', 'MOQ 20 juegos', 'Perfecto para revisión de motor en África y SEA'],
+      fr: ['Alésage 52.4mm (CG125)', 'Cylindre alliage d\'aluminium + chemise fonte', 'Ensemble complet : cylindre, piston, segment, axe, circlip, joint', 'Taux de compression 9:1', 'Haute résistance à l\'usure', 'MOQ 20 ensembles', 'Parfait pour la révision moteur en Afrique et SEA'],
+      ar: ['قطر التجويف 52.4 مم (CG125)', 'أسطوانة ألومنيوم + بطانة حديد زهر', 'مجموعة كاملة: أسطوانة، مكبس، حلقة، مسمار، مشبك، حشية', 'نسبة الضغط 9:1', 'مقاومة عالية للتآكل', 'الحد الأدنى 20 طقم', 'مثالي لإصلاح المحرك في أفريقيا وجنوب شرق آسيا'],
+      ru: ['Диаметр цилиндра 52.4 мм (CG125)', 'Алюминиевый цилиндр + чугунная гильза', 'Полный комплект: цилиндр, поршень, кольцо, палец, стопор, прокладка', 'Степень сжатия 9:1', 'Высокая износостойкость', 'MOQ 20 комплектов', 'Идеален для капремонта двигателя в Африке и ЮВА'],
+      pt: ['Diâmetro do cilindro 52.4mm (CG125)', 'Cilindro de liga de alumínio + camisa de ferro fundido', 'Conjunto completo: cilindro, pistão, anel, pino, circlip, junta', 'Taxa de compressão 9:1', 'Alta resistência ao desgaste', 'MOQ 20 conjuntos', 'Perfeito para revisão de motor em África e SEA']
+    },
+    specs: {
+      'Bore Size': '52.4mm (CG125)',
+      'Material': 'Aluminum Alloy Cylinder + Cast Iron Liner',
+      'Full Set': 'Cylinder, Piston, Ring, Pin, Circlip, Gasket',
+      'Compression Ratio': '9:1',
+      'Fit Model': 'CG125, WAVE125',
+      'MOQ': '20 Sets',
+      'Lead Time': '7–15 Working Days',
+      'Trade Term': 'EXW / FOB / CIF / DDP',
+      'Packing Term': 'Standard exporting packaging',
+      'Shipping': 'By sea'
+    },
+    keywords: 'motorcycle cylinder piston kit, CG125 cylinder kit, motorcycle engine parts, cylinder piston wholesale, China motorcycle engine parts, WAVE125 cylinder kit, motorcycle overhaul kit, engine rebuild parts, Africa motorcycle engine parts'
+  },
+
+  /* ---------------- 3. 离合器片 ---------------- */
+  'parts-clutch-plate': {
+    id: 'parts-clutch-plate',
+    category: 'parts',
+    icon: 'fa-circle-notch',
+    image: 'assets/images/parts-clutch-plate.jpg',
+    gallery: [
+      'assets/images/parts-clutch-plate-1.jpg',
+      'assets/images/parts-clutch-plate-2.jpg',
+      'assets/images/parts-clutch-plate-3.jpg'
+    ],
+    name: {
+      en: 'Motorcycle Clutch Friction Plate',
+      es: 'Disco de Embrague para Moto',
+      fr: 'Disque d\'Embrayage Moto',
+      ar: 'قرص قابض الدراجة النارية',
+      ru: 'Фрикционный диск сцепления для мотоцикла',
+      pt: 'Disco de Embraiagem para Moto'
+    },
+    description: {
+      en: 'Motorcycle clutch friction plate for CG125, GN125, WAVE125 and other popular models. Made of asbestos-free paper base material (EU standard), with excellent heat resistance and stable friction coefficient. Ideal for transmission overhaul and aftermarket replacement in Africa and Southeast Asia.',
+      es: 'Disco de embrague para moto CG125, GN125, WAVE125 y otros modelos populares. Fabricado con material base de papel sin amianto (norma UE), con excelente resistencia al calor y coeficiente de fricción estable. Ideal para revisión de transmisión y reemplazo aftermarket en África y Sudeste Asiático.',
+      fr: 'Disque d\'embrayage moto pour CG125, GN125, WAVE125 et autres modèles populaires. Fabriqué en papier sans amiante (norme UE), avec une excellente résistance à la chaleur et un coefficient de friction stable. Idéal pour la révision de transmission et le remplacement aftermarket en Afrique et en Asie du Sud-Est.',
+      ar: 'قرص قابض دراجة نارية لـ CG125 وGN125 وWAVE125 وغيرها من الطرازات الشائعة. مصنوع من مادة ورقية خالية من الأسبستوس (معيار الاتحاد الأوروبي)، بمقاومة حرارة ممتازة ومعامل احتكاك مستقر. مثالي لإصلاح ناقل الحركة والاستبدال بعد البيع في أفريقيا وجنوب شرق آسيا.',
+      ru: 'Фрикционный диск сцепления для CG125, GN125, WAVE125 и других популярных моделей. Изготовлен из безасбестового бумажного материала (стандарт ЕС), с отличной термостойкостью и стабильным коэффициентом трения. Идеален для ремонта трансмиссии и замены на вторичном рынке в Африке и ЮВА.',
+      pt: 'Disco de embraiagem para CG125, GN125, WAVE125 e outros modelos populares. Fabricado em material de papel sem amianto (norma UE), com excelente resistência ao calor e coeficiente de atrito estável. Ideal para revisão de transmissão e substituição aftermarket em África e Sudeste Asiático.'
+    },
+    highlights: {
+      en: ['Size: OD 110mm / ID 91mm / Thickness 3.0mm', 'Asbestos-free paper base (EU standard)', 'Temperature resistance: -20℃ ~ 220℃', 'Friction coefficient: 0.32–0.38', 'Fits CG125, GN125, WAVE125', 'MOQ 500 PCS', 'Stable friction for long service life'],
+      es: ['Tamaño: DE 110mm / DI 91mm / Grosor 3.0mm', 'Base de papel sin amianto (norma UE)', 'Resistencia a la temperatura: -20℃ ~ 220℃', 'Coeficiente de fricción: 0.32–0.38', 'Compatible CG125, GN125, WAVE125', 'MOQ 500 PCS', 'Fricción estable para larga vida útil'],
+      fr: ['Taille : DE 110mm / DI 91mm / Épaisseur 3.0mm', 'Papier sans amiante (norme UE)', 'Résistance thermique : -20℃ ~ 220℃', 'Coefficient de friction : 0.32–0.38', 'Compatible CG125, GN125, WAVE125', 'MOQ 500 PCS', 'Friction stable pour une longue durée de vie'],
+      ar: ['المقاس: قطر خارجي 110 مم / داخلي 91 مم / سمك 3.0 مم', 'ورق خالٍ من الأسبستوس (معيار الاتحاد الأوروبي)', 'مقاومة الحرارة: -20℃ ~ 220℃', 'معامل الاحتكاك: 0.32–0.38', 'متوافق مع CG125 وGN125 وWAVE125', 'الحد الأدنى 500 قطعة', 'احتكاك مستقر لعمر خدمة طويل'],
+      ru: ['Размер: OD 110 мм / ID 91 мм / Толщина 3.0 мм', 'Безасбестовая бумажная основа (стандарт ЕС)', 'Термостойкость: -20℃ ~ 220℃', 'Коэффициент трения: 0.32–0.38', 'Совместим с CG125, GN125, WAVE125', 'MOQ 500 шт.', 'Стабильное трение и долгий срок службы'],
+      pt: ['Tamanho: DE 110mm / DI 91mm / Espessura 3.0mm', 'Papel sem amianto (norma UE)', 'Resistência à temperatura: -20℃ ~ 220℃', 'Coeficiente de atrito: 0.32–0.38', 'Compatível com CG125, GN125, WAVE125', 'MOQ 500 PCS', 'Atrito estável para longa vida útil']
+    },
+    specs: {
+      'Size': 'OD 110mm / ID 91mm / Thickness 3.0mm',
+      'Material': 'Asbestos-free Paper Base (EU Standard)',
+      'Temperature Resistance': '-20℃ ~ 220℃',
+      'Friction Coefficient': '0.32–0.38',
+      'Fit Model': 'CG125, GN125, WAVE125',
+      'MOQ': '500 PCS',
+      'Lead Time': '7–15 Working Days',
+      'Trade Term': 'EXW / FOB / CIF / DDP',
+      'Packing Term': 'Standard exporting packaging',
+      'Shipping': 'By sea'
+    },
+    keywords: 'motorcycle clutch friction plate, CG125 clutch plate, clutch disc motorcycle, motorcycle clutch parts, clutch plate wholesale, China motorcycle clutch supplier, Africa motorcycle clutch, WAVE125 clutch plate, GN125 clutch disc, transmission wear parts'
+  },
+
+  /* ---------------- 4. LED 大灯 ---------------- */
+  'parts-led-headlight': {
+    id: 'parts-led-headlight',
+    category: 'parts',
+    icon: 'fa-lightbulb',
+    image: 'assets/images/parts-led-headlight.jpg',
+    gallery: [
+      'assets/images/parts-led-headlight-1.jpg',
+      'assets/images/parts-led-headlight-2.jpg',
+      'assets/images/parts-led-headlight-3.jpg'
+    ],
+    name: {
+      en: 'Motorcycle LED Headlight',
+      es: 'Faro LED para Moto',
+      fr: 'Phares LED Moto',
+      ar: 'مصباح LED للدراجة النارية',
+      ru: 'Светодиодная фара для мотоцикла',
+      pt: 'Farol LED para Moto'
+    },
+    description: {
+      en: 'High brightness motorcycle LED headlight retrofit part with DC 12V input, 30W/45W/60W optional. IP67 waterproof, 6000K white light, CE / RoHS / DOT optional certification. High profit export goods for USA, Europe and global retrofit markets.',
+      es: 'Faro LED para moto de alta luminosidad con entrada DC 12V, potencia 30W/45W/60W opcional. Impermeable IP67, luz blanca 6000K, certificación CE / RoHS / DOT opcional. Producto de exportación de alta rentabilidad para EE.UU., Europa y mercados globales de retrofit.',
+      fr: 'Phare LED moto haute luminosité avec entrée DC 12V, puissance 30W/45W/60W en option. Étanche IP67, lumière blanche 6000K, certification CE / RoHS / DOT en option. Produit d\'exportation à forte rentabilité pour les États-Unis, l\'Europe et les marchés mondiaux du retrofit.',
+      ar: 'مصباح LED عالي السطوع للدراجة النارية بمدخل DC 12 فولت، بقوة 30/45/60 واط اختياري. مقاوم للماء IP67، ضوء أبيض 6000K، شهادة CE / RoHS / DOT اختيارية. سلعة تصديرية عالية الربح للولايات المتحدة وأوروبا وأسواق التعديل العالمية.',
+      ru: 'Светодиодная фара для мотоцикла с высокой яркостью, вход DC 12 В, мощность 30/45/60 Вт на выбор. Водонепроницаемая IP67, белый свет 6000K, сертификация CE / RoHS / DOT опционально. Высокорентабельный экспортный товар для США, Европы и мировых рынков тюнинга.',
+      pt: 'Farol LED de alta luminosidade para moto com entrada DC 12V, potência 30W/45W/60W opcional. Impermeável IP67, luz branca 6000K, certificação CE / RoHS / DOT opcional. Produto de exportação de alta rentabilidade para EUA, Europa e mercados globais de retrofit.'
+    },
+    highlights: {
+      en: ['Voltage: DC 12V', 'Power: 30W / 45W / 60W optional', 'Waterproof: IP67', 'Color temperature: 6000K white light', 'Certification: CE, RoHS, DOT optional', 'MOQ 20 PCS', 'High profit retrofit export goods'],
+      es: ['Voltaje: DC 12V', 'Potencia: 30W / 45W / 60W opcional', 'Impermeable: IP67', 'Temperatura de color: 6000K luz blanca', 'Certificación: CE, RoHS, DOT opcional', 'MOQ 20 PCS', 'Producto de retrofit de alta rentabilidad'],
+      fr: ['Tension : DC 12V', 'Puissance : 30W / 45W / 60W en option', 'Étanche : IP67', 'Température de couleur : 6000K lumière blanche', 'Certification : CE, RoHS, DOT en option', 'MOQ 20 PCS', 'Produit de retrofit à forte rentabilité'],
+      ar: ['الجهد: DC 12 فولت', 'القوة: 30/45/60 واط اختياري', 'مقاوم للماء: IP67', 'درجة حرارة اللون: 6000K ضوء أبيض', 'الشهادة: CE، RoHS، DOT اختياري', 'الحد الأدنى 20 قطعة', 'سلعة تعديل عالية الربح'],
+      ru: ['Напряжение: DC 12 В', 'Мощность: 30 / 45 / 60 Вт на выбор', 'Водонепроницаемость: IP67', 'Цветовая температура: 6000K белый свет', 'Сертификация: CE, RoHS, DOT опционально', 'MOQ 20 шт.', 'Высокорентабельный товар для тюнинга'],
+      pt: ['Tensão: DC 12V', 'Potência: 30W / 45W / 60W opcional', 'Impermeável: IP67', 'Temperatura de cor: 6000K luz branca', 'Certificação: CE, RoHS, DOT opcional', 'MOQ 20 PCS', 'Produto de retrofit de alta rentabilidade']
+    },
+    specs: {
+      'Voltage': 'DC 12V',
+      'Power': '30W / 45W / 60W Optional',
+      'Waterproof': 'IP67',
+      'Color Temperature': '6000K White Light',
+      'Certification': 'CE, RoHS, DOT Optional',
+      'MOQ': '20 PCS',
+      'Lead Time': '7–15 Working Days',
+      'Trade Term': 'EXW / FOB / CIF / DDP',
+      'Packing Term': 'Standard exporting packaging',
+      'Shipping': 'By sea'
+    },
+    keywords: 'motorcycle LED headlight, LED motorcycle headlight wholesale, IP67 motorcycle headlight, motorcycle retrofit LED light, 12V motorcycle headlight, China LED motorcycle light supplier, DOT motorcycle headlight, high brightness motorcycle LED, motorcycle headlight retrofit, LED headlight for USA Europe'
+  },
+
+  /* ---------------- 5. LCD 仪表 ---------------- */
+  'parts-lcd-speedometer': {
+    id: 'parts-lcd-speedometer',
+    category: 'parts',
+    icon: 'fa-tachometer-alt',
+    image: 'assets/images/parts-lcd-speedometer.jpg',
+    gallery: [
+      'assets/images/parts-lcd-speedometer-1.jpg',
+      'assets/images/parts-lcd-speedometer-2.jpg',
+      'assets/images/parts-lcd-speedometer-3.jpg'
+    ],
+    name: {
+      en: 'LCD Digital Speedometer',
+      es: 'Velocímetro Digital LCD',
+      fr: 'Compteur Digital LCD',
+      ar: 'عداد سرعة رقمي LCD',
+      ru: 'Цифровой LCD-спидометр',
+      pt: 'Velocímetro Digital LCD'
+    },
+    description: {
+      en: 'Multi-function LCD digital speedometer for Yamaha BWS/Zuma125 and similar models. DC 12V input, IP67 waterproof. Displays speed, RPM, fuel, mileage, voltage and gear. Working temperature -20℃ ~ 70℃. Ideal for scooter and motorcycle retrofit markets worldwide.',
+      es: 'Velocímetro digital LCD multifunción para Yamaha BWS/Zuma125 y modelos similares. Entrada DC 12V, impermeable IP67. Muestra velocidad, RPM, combustible, kilometraje, voltaje y marcha. Temperatura de trabajo -20℃ ~ 70℃. Ideal para mercados de retrofit de scooters y motos en todo el mundo.',
+      fr: 'Compteur digital LCD multifonction pour Yamaha BWS/Zuma125 et modèles similaires. Entrée DC 12V, étanche IP67. Affiche vitesse, RPM, carburant, kilométrage, tension et rapport. Température de fonctionnement -20℃ ~ 70℃. Idéal pour les marchés du retrofit scooter et moto dans le monde entier.',
+      ar: 'عداد سرعة رقمي LCD متعدد الوظائف لـ Yamaha BWS/Zuma125 والطرازات المشابهة. مدخل DC 12 فولت، مقاوم للماء IP67. يعرض السرعة ودورات المحرك والوقود والمسافة والجهد والترس. درجة حرارة التشغيل -20℃ ~ 70℃. مثالي لأسواق تعديل الدراجات النارية والسكوتر في جميع أنحاء العالم.',
+      ru: 'Многофункциональный цифровой LCD-спидометр для Yamaha BWS/Zuma125 и аналогичных моделей. Вход DC 12 В, водонепроницаемость IP67. Отображает скорость, обороты, топливо, пробег, напряжение и передачу. Рабочая температура -20℃ ~ 70℃. Идеален для мировых рынков тюнинга скутеров и мотоциклов.',
+      pt: 'Velocímetro digital LCD multifunções para Yamaha BWS/Zuma125 e modelos similares. Entrada DC 12V, impermeável IP67. Exibe velocidade, RPM, combustível, quilometragem, tensão e mudança. Temperatura de funcionamento -20℃ ~ 70℃. Ideal para mercados de retrofit de scooters e motos em todo o mundo.'
+    },
+    highlights: {
+      en: ['Voltage: DC 12V', 'Waterproof: IP67', 'Display: Speed, RPM, Fuel, Mileage, Voltage, Gear', 'Working temp: -20℃ ~ 70℃', 'Fits Yamaha BWS/Zuma125 & similar', 'MOQ 10 sets', 'Multi-function digital dashboard retrofit'],
+      es: ['Voltaje: DC 12V', 'Impermeable: IP67', 'Pantalla: Velocidad, RPM, Combustible, Kilometraje, Voltaje, Marcha', 'Temp. de trabajo: -20℃ ~ 70℃', 'Compatible Yamaha BWS/Zuma125 y similares', 'MOQ 10 juegos', 'Retrofit de panel digital multifunción'],
+      fr: ['Tension : DC 12V', 'Étanche : IP67', 'Affichage : Vitesse, RPM, Carburant, Kilométrage, Tension, Rapport', 'Temp. de travail : -20℃ ~ 70℃', 'Compatible Yamaha BWS/Zuma125 et similaires', 'MOQ 10 ensembles', 'Retrofit de tableau de bord digital multifonction'],
+      ar: ['الجهد: DC 12 فولت', 'مقاوم للماء: IP67', 'العرض: السرعة، دورات المحرك، الوقود، المسافة، الجهد، الترس', 'درجة حرارة التشغيل: -20℃ ~ 70℃', 'متوافق مع Yamaha BWS/Zuma125 وما شابه', 'الحد الأدنى 10 أطقم', 'تعديل لوحة عدادات رقمية متعددة الوظائف'],
+      ru: ['Напряжение: DC 12 В', 'Водонепроницаемость: IP67', 'Дисплей: скорость, обороты, топливо, пробег, напряжение, передача', 'Рабочая температура: -20℃ ~ 70℃', 'Совместим с Yamaha BWS/Zuma125 и аналогами', 'MOQ 10 комплектов', 'Многофункциональный цифровой тюнинг приборной панели'],
+      pt: ['Tensão: DC 12V', 'Impermeável: IP67', 'Ecrã: Velocidade, RPM, Combustível, Quilometragem, Tensão, Mudança', 'Temp. de funcionamento: -20℃ ~ 70℃', 'Compatível com Yamaha BWS/Zuma125 e similares', 'MOQ 10 conjuntos', 'Retrofit de painel digital multifunções']
+    },
+    specs: {
+      'Voltage': 'DC 12V',
+      'Waterproof': 'IP67',
+      'Display': 'Speed, RPM, Fuel, Mileage, Voltage, Gear',
+      'Working Temp': '-20℃ ~ 70℃',
+      'Fit Model': 'Yamaha BWS / Zuma 125 & Similar',
+      'MOQ': '10 Sets',
+      'Lead Time': '7–15 Working Days',
+      'Trade Term': 'EXW / FOB / CIF / DDP',
+      'Packing Term': 'Standard exporting packaging',
+      'Shipping': 'By sea'
+    },
+    keywords: 'motorcycle LCD speedometer, digital speedometer motorcycle, LCD dashboard motorcycle, motorcycle digital meter wholesale, Yamaha BWS speedometer, Zuma125 digital dashboard, motorcycle retrofit dashboard, China motorcycle speedometer supplier, IP67 motorcycle meter'
+  },
+
+  /* ---------------- 6. 刹车盘/刹车片 ---------------- */
+  'parts-brake-disc-pad': {
+    id: 'parts-brake-disc-pad',
+    category: 'parts',
+    icon: 'fa-circle',
+    image: 'assets/images/parts-brake-disc-pad.jpg',
+    gallery: [
+      'assets/images/parts-brake-disc-pad-1.jpg',
+      'assets/images/parts-brake-disc-pad-2.jpg',
+      'assets/images/parts-brake-disc-pad-3.jpg'
+    ],
+    name: {
+      en: 'Brake Disc & Brake Pad Set',
+      es: 'Disco de Freno y Pastillas',
+      fr: 'Disque de Frein et Plaquettes',
+      ar: 'قرص فرامل وطقم وسادات',
+      ru: 'Тормозной диск и колодки',
+      pt: 'Disco de Travão e Pastilhas'
+    },
+    description: {
+      en: 'Motorcycle brake disc and brake pad set with excellent heat dissipation. 420 stainless steel disc (220mm OD, 3.0/3.5mm thickness) and semi-metal or ceramic pad options. Fits CG125, GN125, WAVE125 and other popular models. Ideal for wholesale brake parts buyers worldwide.',
+      es: 'Disco de freno y pastillas de freno para moto con excelente disipación de calor. Disco de acero inoxidable 420 (220mm DE, 3.0/3.5mm grosor) y opciones de pastillas semi-metálicas o cerámicas. Compatible CG125, GN125, WAVE125 y otros modelos populares. Ideal para compradores mayoristas de frenos en todo el mundo.',
+      fr: 'Disque de frein et plaquettes de frein moto avec excellente dissipation thermique. Disque en acier inoxydable 420 (DE 220mm, épaisseur 3.0/3.5mm) et options plaquettes semi-métalliques ou céramiques. Compatible CG125, GN125, WAVE125 et autres modèles populaires. Idéal pour les acheteurs grossistes de freins dans le monde entier.',
+      ar: 'قرص فرامل وطقم وسادات فرامل للدراجة النارية مع تبديد حرارة ممتاز. قرص فولاذ مقاوم للصدأ 420 (قطر خارجي 220 مم، سمك 3.0/3.5 مم) وخيارات وسادات نصف معدنية أو سيراميك. متوافق مع CG125 وGN125 وWAVE125 وغيرها. مثالي لمشتري قطع الفرامل بالجملة في جميع أنحاء العالم.',
+      ru: 'Тормозной диск и колодки для мотоцикла с отличным теплоотводом. Диск из нержавеющей стали 420 (OD 220 мм, толщина 3.0/3.5 мм) и варианты полуметаллических или керамических колодок. Совместим с CG125, GN125, WAVE125 и другими популярными моделями. Идеален для оптовых покупателей тормозных деталей по всему миру.',
+      pt: 'Disco de travão e pastilhas de travão para moto com excelente dissipação de calor. Disco em aço inoxidável 420 (DE 220mm, espessura 3.0/3.5mm) e opções de pastilhas semi-metálicas ou cerâmicas. Compatível com CG125, GN125, WAVE125 e outros modelos populares. Ideal para compradores grossistas de travões em todo o mundo.'
+    },
+    highlights: {
+      en: ['Disc material: 420 stainless steel', 'Disc size: 220mm OD, 3.0/3.5mm thickness', 'Pad material: Semi-metal / Ceramic optional', 'Fits CG125, GN125, WAVE125', 'Excellent heat dissipation', 'MOQ 100 sets', 'Top export brake parts for global market'],
+      es: ['Material del disco: acero inoxidable 420', 'Tamaño del disco: 220mm DE, grosor 3.0/3.5mm', 'Material de pastillas: Semi-metálico / Cerámico opcional', 'Compatible CG125, GN125, WAVE125', 'Excelente disipación de calor', 'MOQ 100 juegos', 'Piezas de freno de exportación top para el mercado global'],
+      fr: ['Matériau du disque : acier inoxydable 420', 'Taille du disque : DE 220mm, épaisseur 3.0/3.5mm', 'Matériau des plaquettes : Semi-métallique / Céramique en option', 'Compatible CG125, GN125, WAVE125', 'Excellente dissipation thermique', 'MOQ 100 ensembles', 'Pièces de freinage export top pour le marché mondial'],
+      ar: ['مادة القرص: فولاذ مقاوم للصدأ 420', 'مقاس القرص: قطر خارجي 220 مم، سمك 3.0/3.5 مم', 'مادة الوسادات: نصف معدنية / سيراميك اختياري', 'متوافق مع CG125 وGN125 وWAVE125', 'تبديد حرارة ممتاز', 'الحد الأدنى 100 طقم', 'قطع فرامل تصديرية أساسية للسوق العالمية'],
+      ru: ['Материал диска: нержавеющая сталь 420', 'Размер диска: OD 220 мм, толщина 3.0/3.5 мм', 'Материал колодок: полуметалл / керамика на выбор', 'Совместим с CG125, GN125, WAVE125', 'Отличный теплоотвод', 'MOQ 100 комплектов', 'Топовые экспортные тормозные детали для мирового рынка'],
+      pt: ['Material do disco: aço inoxidável 420', 'Tamanho do disco: DE 220mm, espessura 3.0/3.5mm', 'Material das pastilhas: Semi-metálico / Cerâmico opcional', 'Compatível com CG125, GN125, WAVE125', 'Excelente dissipação de calor', 'MOQ 100 conjuntos', 'Peças de travão de exportação top para o mercado global']
+    },
+    specs: {
+      'Disc Material': '420 Stainless Steel',
+      'Disc Size': '220mm OD, 3.0/3.5mm Thickness',
+      'Pad Material': 'Semi-metal / Ceramic Optional',
+      'Fit Model': 'CG125, GN125, WAVE125',
+      'MOQ': '100 Sets',
+      'Lead Time': '7–15 Working Days',
+      'Trade Term': 'EXW / FOB / CIF / DDP',
+      'Packing Term': 'Standard exporting packaging',
+      'Shipping': 'By sea'
+    },
+    keywords: 'motorcycle brake disc, motorcycle brake pad set, CG125 brake disc, GN125 brake pads, brake disc wholesale, China motorcycle brake supplier, motorcycle brake parts, semi-metal brake pads, ceramic brake pads motorcycle, 220mm brake disc'
+  },
+
+  /* ---------------- 7. 排气管 ---------------- */
+  'parts-exhaust-muffler': {
+    id: 'parts-exhaust-muffler',
+    category: 'parts',
+    icon: 'fa-wind',
+    image: 'assets/images/parts-exhaust-muffler.jpg',
+    gallery: [
+      'assets/images/parts-exhaust-muffler-1.jpg',
+      'assets/images/parts-exhaust-muffler-2.jpg',
+      'assets/images/parts-exhaust-muffler-3.jpg'
+    ],
+    name: {
+      en: 'Stainless Steel Exhaust Muffler',
+      es: 'Silenciador de Escape de Acero Inoxidable',
+      fr: 'Silencieux d\'Échappement en Acier Inoxydable',
+      ar: 'كاتم صوت من الفولاذ المقاوم للصدأ',
+      ru: 'Глушитель из нержавеющей стали',
+      pt: 'Silenciador de Escape em Aço Inoxidável'
+    },
+    description: {
+      en: 'Universal modified stainless steel exhaust muffler for 200cc-400cc motorcycles. Made of 304 stainless steel, 51mm universal interface, temperature resistance ≤600℃, sound level 92db with adjustable silencer plug. Ideal for motorcycle modification and aftermarket replacement worldwide.',
+      es: 'Silenciador de escape universal modificado de acero inoxidable para motos de 200cc-400cc. Fabricado en acero inoxidable 304, interfaz universal de 51mm, resistencia a la temperatura ≤600℃, nivel de sonido 92db con tapón silenciador ajustable. Ideal para modificación de motos y reemplazo aftermarket en todo el mundo.',
+      fr: 'Silencieux d\'échappement universel modifié en acier inoxydable pour motos 200cc-400cc. Fabriqué en acier inoxydable 304, interface universelle 51mm, résistance thermique ≤600℃, niveau sonore 92db avec bouchon silencieux réglable. Idéal pour la modification de moto et le remplacement aftermarket dans le monde entier.',
+      ar: 'كاتم صوت عالمي معدل من الفولاذ المقاوم للصدأ للدراجات النارية 200-400 سي سي. مصنوع من الفولاذ المقاوم للصدأ 304، واجهة عالمية 51 مم، مقاومة حرارة ≤600℃، مستوى صوت 92 ديسيبل مع سدادة كاتم قابلة للتعديل. مثالي لتعديل الدراجات النارية والاستبدال بعد البيع في جميع أنحاء العالم.',
+      ru: 'Универсальный тюнинговый глушитель из нержавеющей стали для мотоциклов 200-400 куб.см. Изготовлен из нержавеющей стали 304, универсальный интерфейс 51 мм, термостойкость ≤600℃, уровень шума 92 дБ с регулируемой заглушкой. Идеален для тюнинга мотоциклов и замены на вторичном рынке по всему миру.',
+      pt: 'Silenciador de escape universal modificado em aço inoxidável para motos 200cc-400cc. Fabricado em aço inoxidável 304, interface universal 51mm, resistência à temperatura ≤600℃, nível de som 92db com tampão silenciador ajustável. Ideal para modificação de moto e substituição aftermarket em todo o mundo.'
+    },
+    highlights: {
+      en: ['Material: 304 stainless steel', 'Interface: 51mm universal caliber', 'Temp resistance: ≤600℃', 'Sound level: 92db (adjustable silencer plug)', 'Fits 200cc-400cc motorcycles', 'MOQ 10 PCS', 'Universal modified exhaust for global market'],
+      es: ['Material: acero inoxidable 304', 'Interfaz: calibre universal 51mm', 'Resistencia temp.: ≤600℃', 'Nivel de sonido: 92db (tapón silenciador ajustable)', 'Compatible motos 200cc-400cc', 'MOQ 10 PCS', 'Escape modificado universal para el mercado global'],
+      fr: ['Matériau : acier inoxydable 304', 'Interface : calibre universel 51mm', 'Résistance temp. : ≤600℃', 'Niveau sonore : 92db (bouchon silencieux réglable)', 'Compatible motos 200cc-400cc', 'MOQ 10 PCS', 'Échappement modifié universel pour le marché mondial'],
+      ar: ['المادة: فولاذ مقاوم للصدأ 304', 'الواجهة: عيار عالمي 51 مم', 'مقاومة الحرارة: ≤600℃', 'مستوى الصوت: 92 ديسيبل (سدادة كاتم قابلة للتعديل)', 'متوافق مع الدراجات 200-400 سي سي', 'الحد الأدنى 10 قطع', 'كاتم صوت عالمي معدل للسوق العالمية'],
+      ru: ['Материал: нержавеющая сталь 304', 'Интерфейс: универсальный 51 мм', 'Термостойкость: ≤600℃', 'Уровень шума: 92 дБ (регулируемая заглушка)', 'Совместим с мотоциклами 200-400 куб.см', 'MOQ 10 шт.', 'Универсальный тюнинговый глушитель для мирового рынка'],
+      pt: ['Material: aço inoxidável 304', 'Interface: calibre universal 51mm', 'Resistência temp.: ≤600℃', 'Nível de som: 92db (tampão silenciador ajustável)', 'Compatível com motos 200cc-400cc', 'MOQ 10 PCS', 'Escape modificado universal para o mercado global']
+    },
+    specs: {
+      'Material': '304 Stainless Steel',
+      'Interface': '51mm Universal Caliber',
+      'Temp Resistance': '≤600℃',
+      'Sound Level': '92db (Silencer Plug Adjustable)',
+      'Fit Model': '200cc–400cc Motorcycles',
+      'MOQ': '10 PCS',
+      'Lead Time': '7–15 Working Days',
+      'Trade Term': 'EXW / FOB / CIF / DDP',
+      'Packing Term': 'Standard exporting packaging',
+      'Shipping': 'By sea'
+    },
+    keywords: 'motorcycle exhaust muffler, stainless steel exhaust motorcycle, universal exhaust muffler, 51mm exhaust pipe, motorcycle modified exhaust, China motorcycle exhaust supplier, 200cc exhaust muffler, 400cc exhaust system, motorcycle slip on exhaust, exhaust muffler wholesale'
+  },
+
+  /* ---------------- 8. 发动机垫片套件 ---------------- */
+  'parts-gasket-set': {
+    id: 'parts-gasket-set',
+    category: 'parts',
+    icon: 'fa-layer-group',
+    image: 'assets/images/parts-gasket-set.jpg',
+    gallery: [
+      'assets/images/parts-gasket-set-1.jpg',
+      'assets/images/parts-gasket-set-2.jpg',
+      'assets/images/parts-gasket-set-3.jpg'
+    ],
+    name: {
+      en: 'Engine Full Gasket Set',
+      es: 'Juego Completo de Juntas de Motor',
+      fr: 'Kit Complet de Joints Moteur',
+      ar: 'طقم حشيات محرك كامل',
+      ru: 'Полный комплект прокладок двигателя',
+      pt: 'Conjunto Completo de Juntas do Motor'
+    },
+    description: {
+      en: 'Complete engine overhaul gasket kit for WAVE125, CG125 and other popular models. Made of asbestos-free composite paper, includes head gasket, cylinder gasket, crankcase gasket, oil seal and O-ring. Oil-proof, high-temp resistant, anti-leakage. Ideal for engine rebuild wholesale in Africa and Southeast Asia.',
+      es: 'Juego completo de juntas para revisión de motor WAVE125, CG125 y otros modelos populares. Fabricado en papel compuesto sin amianto, incluye junta de culata, junta de cilindro, junta de cárter, retén de aceite y junta tórica. Resistente al aceite, a altas temperaturas y anti-fugas. Ideal para mayoristas de reconstrucción de motores en África y Sudeste Asiático.',
+      fr: 'Kit complet de joints pour révision moteur WAVE125, CG125 et autres modèles populaires. Fabriqué en papier composite sans amiante, comprend joint de culasse, joint de cylindre, joint de carter, joint d\'huile et joint torique. Résistant à l\'huile, aux hautes températures et anti-fuites. Idéal pour les grossistes en reconstruction moteur en Afrique et en Asie du Sud-Est.',
+      ar: 'طقم حشيات كامل لإصلاح محرك WAVE125 وCG125 وغيرها من الطرازات الشائعة. مصنوع من ورق مركب خالٍ من الأسبستوس، يشمل حشية الرأس وحشية الأسطوانة وحشية علبة المرافق وحشية الزيت وحلقة O. مقاوم للزيت ودرجات الحرارة العالية ومانع للتسرب. مثالي لتجارة إعادة بناء المحرك بالجملة في أفريقيا وجنوب شرق آسيا.',
+      ru: 'Полный комплект прокладок для капремонта двигателя WAVE125, CG125 и других популярных моделей. Изготовлен из безасбестового композитного материала, включает прокладку ГБЦ, прокладку цилиндра, прокладку картера, сальник и O-ring. Маслостойкий, термостойкий, герметичный. Идеален для оптовой продажи при капремонте двигателей в Африке и ЮВА.',
+      pt: 'Conjunto completo de juntas para revisão de motor WAVE125, CG125 e outros modelos populares. Fabricado em papel compósito sem amianto, inclui junta da cabeça, junta do cilindro, junta do cárter, retentor de óleo e O-ring. Resistente ao óleo, a altas temperaturas e anti-fugas. Ideal para grossistas de reconstrução de motores em África e Sudeste Asiático.'
+    },
+    highlights: {
+      en: ['Material: Asbestos-free composite paper', 'Includes head gasket, cylinder gasket, crankcase gasket, oil seal, O-ring', 'Oil-proof, high-temp resistant, anti-leakage', 'Fits WAVE125, CG125', 'MOQ 1000 sets', 'Complete overhaul kit for engine rebuild'],
+      es: ['Material: papel compuesto sin amianto', 'Incluye junta de culata, junta de cilindro, junta de cárter, retén de aceite, junta tórica', 'Resistente al aceite, a altas temperaturas, anti-fugas', 'Compatible WAVE125, CG125', 'MOQ 1000 juegos', 'Kit completo de revisión para reconstrucción de motor'],
+      fr: ['Matériau : papier composite sans amiante', 'Comprend joint de culasse, joint de cylindre, joint de carter, joint d\'huile, joint torique', 'Résistant à l\'huile, hautes températures, anti-fuite', 'Compatible WAVE125, CG125', 'MOQ 1000 ensembles', 'Kit complet de révision pour reconstruction moteur'],
+      ar: ['المادة: ورق مركب خالٍ من الأسبستوس', 'يشمل حشية الرأس، حشية الأسطوانة، حشية علبة المرافق، حشية الزيت، حلقة O', 'مقاوم للزيت، للحرارة العالية، مانع للتسرب', 'متوافق مع WAVE125 وCG125', 'الحد الأدنى 1000 طقم', 'طقم إصلاح كامل لإعادة بناء المحرك'],
+      ru: ['Материал: безасбестовый композитный материал', 'Включает прокладку ГБЦ, цилиндра, картера, сальник, O-ring', 'Маслостойкий, термостойкий, герметичный', 'Совместим с WAVE125, CG125', 'MOQ 1000 комплектов', 'Полный комплект для капремонта двигателя'],
+      pt: ['Material: papel compósito sem amianto', 'Inclui junta da cabeça, junta do cilindro, junta do cárter, retentor de óleo, O-ring', 'Resistente ao óleo, a altas temperaturas, anti-fugas', 'Compatível com WAVE125, CG125', 'MOQ 1000 conjuntos', 'Conjunto completo de revisão para reconstrução de motor']
+    },
+    specs: {
+      'Material': 'Asbestos-free Composite Paper',
+      'Include': 'Head Gasket, Cylinder Gasket, Crankcase Gasket, Oil Seal, O-ring',
+      'Feature': 'Oil-proof, High Temp Resistant, Anti-leakage',
+      'Fit Model': 'WAVE125, CG125',
+      'MOQ': '1000 Sets',
+      'Lead Time': '7–15 Working Days',
+      'Trade Term': 'EXW / FOB / CIF / DDP',
+      'Packing Term': 'Standard exporting packaging',
+      'Shipping': 'By sea'
+    },
+    keywords: 'motorcycle full gasket set, engine gasket kit, WAVE125 gasket set, CG125 gasket kit, motorcycle gasket wholesale, China motorcycle gasket supplier, engine overhaul gasket, head gasket motorcycle, crankcase gasket, motorcycle O-ring kit'
+  },
+
+  /* ---------------- 9. 后减震器 ---------------- */
+  'parts-shock-absorber': {
+    id: 'parts-shock-absorber',
+    category: 'parts',
+    icon: 'fa-arrows-alt-v',
+    image: 'assets/images/parts-shock-absorber.jpg',
+    gallery: [
+      'assets/images/parts-shock-absorber-1.jpg',
+      'assets/images/parts-shock-absorber-2.jpg',
+      'assets/images/parts-shock-absorber-3.jpg'
+    ],
+    name: {
+      en: 'Adjustable Rear Shock Absorber',
+      es: 'Amortiguador Trasero Ajustable',
+      fr: 'Amortisseur Arrière Réglable',
+      ar: 'ممتص صدمات خلفي قابل للتعديل',
+      ru: 'Регулируемый задний амортизатор',
+      pt: 'Amortecedor Traseiro Ajustável'
+    },
+    description: {
+      en: 'Hydraulic adjustable rear shock absorber for CG125 and off-road motorcycles. Made of 45# steel piston rod and aluminum alloy shell, stroke 120-150mm, spring preload adjustable, hydraulic damping. Ideal for suspension upgrade and aftermarket replacement for global motorcycle markets.',
+      es: 'Amortiguador trasero hidráulico ajustable para CG125 y motos off-road. Fabricado con varilla de pistón de acero 45# y carcasa de aleación de aluminio, carrera 120-150mm, precarga de resorte ajustable, amortiguación hidráulica. Ideal para mejora de suspensión y reemplazo aftermarket para mercados globales.',
+      fr: 'Amortisseur arrière hydraulique réglable pour CG125 et motos tout-terrain. Fabriqué avec tige de piston en acier 45# et boîtier en alliage d\'aluminium, course 120-150mm, précharge de ressort réglable, amortissement hydraulique. Idéal pour l\'amélioration de suspension et le remplacement aftermarket pour les marchés mondiaux.',
+      ar: 'ممتص صدمات خلفي هيدروليكي قابل للتعديل لـ CG125 والدراجات الوعرة. مصنوع من قضيب مكبس فولاذي 45# وهيكل من سبائك الألومنيوم، شوط 120-150 مم، ضبط مسبق للنابض، تخميد هيدروليكي. مثالي لترقية التعليق والاستبدال بعد البيع لأسواق الدراجات العالمية.',
+      ru: 'Гидравлический регулируемый задний амортизатор для CG125 и внедорожных мотоциклов. Изготовлен из стального штока 45# и алюминиевого корпуса, ход 120-150 мм, регулируемая предварительная нагрузка пружины, гидравлическое демпфирование. Идеален для апгрейда подвески и замены на вторичном рынке для мировых мотоциклетных рынков.',
+      pt: 'Amortecedor traseiro hidráulico ajustável para CG125 e motos off-road. Fabricado com haste de pistão em aço 45# e carcaça em liga de alumínio, curso 120-150mm, pré-carga da mola ajustável, amortecimento hidráulico. Ideal para upgrade de suspensão e substituição aftermarket para mercados globais de motos.'
+    },
+    highlights: {
+      en: ['Material: 45# steel piston rod + aluminum alloy shell', 'Stroke: 120–150mm', 'Spring preload adjustable', 'Hydraulic damping', 'Fits CG125, off-road motorcycles', 'MOQ 20 PCS', 'Suspension upgrade & replacement'],
+      es: ['Material: varilla de pistón de acero 45# + carcasa de aleación de aluminio', 'Carrera: 120–150mm', 'Precarga de resorte ajustable', 'Amortiguación hidráulica', 'Compatible CG125, motos off-road', 'MOQ 20 PCS', 'Mejora y reemplazo de suspensión'],
+      fr: ['Matériau : tige de piston en acier 45# + boîtier alliage d\'aluminium', 'Course : 120–150mm', 'Précharge de ressort réglable', 'Amortissement hydraulique', 'Compatible CG125, motos tout-terrain', 'MOQ 20 PCS', 'Amélioration et remplacement de suspension'],
+      ar: ['المادة: قضيب مكبس فولاذي 45# + هيكل سبائك ألومنيوم', 'الشوط: 120-150 مم', 'ضبط مسبق للنابض', 'تخميد هيدروليكي', 'متوافق مع CG125 والدراجات الوعرة', 'الحد الأدنى 20 قطعة', 'ترقية واستبدال التعليق'],
+      ru: ['Материал: стальной шток 45# + алюминиевый корпус', 'Ход: 120-150 мм', 'Регулируемая предварительная нагрузка пружины', 'Гидравлическое демпфирование', 'Совместим с CG125, внедорожными мотоциклами', 'MOQ 20 шт.', 'Апгрейд и замена подвески'],
+      pt: ['Material: haste de pistão em aço 45# + carcaça em liga de alumínio', 'Curso: 120–150mm', 'Pré-carga da mola ajustável', 'Amortecimento hidráulico', 'Compatível com CG125, motos off-road', 'MOQ 20 PCS', 'Upgrade e substituição de suspensão']
+    },
+    specs: {
+      'Material': '45# Steel Piston Rod + Aluminum Alloy Shell',
+      'Stroke': '120–150mm',
+      'Function': 'Spring Preload Adjustable',
+      'Damping': 'Hydraulic Damping',
+      'Fit Model': 'CG125, Off-road Motorcycles',
+      'MOQ': '20 PCS',
+      'Lead Time': '7–15 Working Days',
+      'Trade Term': 'EXW / FOB / CIF / DDP',
+      'Packing Term': 'Standard exporting packaging',
+      'Shipping': 'By sea'
+    },
+    keywords: 'motorcycle rear shock absorber, adjustable shock absorber motorcycle, CG125 shock absorber, hydraulic shock absorber, motorcycle suspension parts, shock absorber wholesale, China motorcycle shock supplier, off-road motorcycle shock, spring preload shock, motorcycle suspension upgrade'
+  },
+
+  /* ---------------- 10. 碟刹报警锁 ---------------- */
+  'parts-disc-lock': {
+    id: 'parts-disc-lock',
+    category: 'parts',
+    icon: 'fa-lock',
+    image: 'assets/images/parts-disc-lock.jpg',
+    gallery: [
+      'assets/images/parts-disc-lock-1.jpg',
+      'assets/images/parts-disc-lock-2.jpg',
+      'assets/images/parts-disc-lock-3.jpg'
+    ],
+    name: {
+      en: 'Alarm Disc Brake Lock',
+      es: 'Candado de Disco con Alarma',
+      fr: 'Antivol à Disque avec Alarme',
+      ar: 'قفل قرص الفرامل مع إنذار',
+      ru: 'Замок на тормозной диск с сигнализацией',
+      pt: 'Cadeado de Disco com Alarme'
+    },
+    description: {
+      en: 'Hot-selling anti-theft alarm disc brake lock for motorcycles and scooters. Aluminum alloy body with hardened steel pin, 110dB super loud alarm, IP54 waterproof, CR2 3V battery. Ideal for security parts wholesale in USA, Europe and worldwide.',
+      es: 'Candado de disco con alarma antirrobo superventas para motos y scooters. Cuerpo de aleación de aluminio con pasador de acero endurecido, alarma de 110dB, impermeable IP54, batería CR2 3V. Ideal para mayoristas de piezas de seguridad en EE.UU., Europa y todo el mundo.',
+      fr: 'Antivol à disque avec alarme antivol très vendu pour motos et scooters. Corps en alliage d\'aluminium avec axe en acier trempé, alarme 110dB, étanche IP54, pile CR2 3V. Idéal pour les grossistes en pièces de sécurité aux États-Unis, en Europe et dans le monde entier.',
+      ar: 'قفل قرص فرامل مع إنذار مضاد للسرقة الأكثر مبيعًا للدراجات النارية والسكوتر. هيكل من سبائك الألومنيوم مع مسمار فولاذي مقسى، إنذار 110 ديسيبل، مقاوم للماء IP54، بطارية CR2 3 فولت. مثالي لتجار قطع الأمان بالجملة في الولايات المتحدة وأوروبا وجميع أنحاء العالم.',
+      ru: 'Хитовый противоугонный замок на тормозной диск с сигнализацией для мотоциклов и скутеров. Алюминиевый корпус с закалённым стальным штифтом, сигнализация 110 дБ, водонепроницаемость IP54, батарея CR2 3V. Идеален для оптовой продажи охранных деталей в США, Европе и по всему миру.',
+      pt: 'Cadeado de disco com alarme anti-roubo mais vendido para motos e scooters. Corpo em liga de alumínio com pino de aço temperado, alarme de 110dB, impermeável IP54, bateria CR2 3V. Ideal para grossistas de peças de segurança nos EUA, Europa e em todo o mundo.'
+    },
+    highlights: {
+      en: ['Material: Aluminum alloy body + hardened steel pin', 'Alarm volume: 110dB super loud', 'Waterproof: IP54', 'Battery: CR2 3V', 'Universal fit for motorcycles & scooters', 'MOQ 20 sets', 'Hot-selling anti-theft security part'],
+      es: ['Material: cuerpo de aleación de aluminio + pasador de acero endurecido', 'Volumen de alarma: 110dB súper fuerte', 'Impermeable: IP54', 'Batería: CR2 3V', 'Compatible universal motos y scooters', 'MOQ 20 juegos', 'Pieza de seguridad antirrobo superventas'],
+      fr: ['Matériau : corps en alliage d\'aluminium + axe en acier trempé', 'Volume d\'alarme : 110dB super fort', 'Étanche : IP54', 'Pile : CR2 3V', 'Compatible universel motos et scooters', 'MOQ 20 ensembles', 'Pièce de sécurité antivol très vendue'],
+      ar: ['المادة: هيكل سبائك ألومنيوم + مسمار فولاذي مقسى', 'مستوى الإنذار: 110 ديسيبل عالي جدًا', 'مقاوم للماء: IP54', 'البطارية: CR2 3 فولت', 'متوافق عالميًا مع الدراجات والسكوتر', 'الحد الأدنى 20 طقم', 'قطعة أمان مضادة للسرقة الأكثر مبيعًا'],
+      ru: ['Материал: алюминиевый корпус + закалённый стальной штифт', 'Громкость сигнализации: 110 дБ', 'Водонепроницаемость: IP54', 'Батарея: CR2 3V', 'Универсальный для мотоциклов и скутеров', 'MOQ 20 комплектов', 'Хитовая охранная деталь против угона'],
+      pt: ['Material: corpo em liga de alumínio + pino de aço temperado', 'Volume do alarme: 110dB super alto', 'Impermeável: IP54', 'Bateria: CR2 3V', 'Compatível universalmente com motos e scooters', 'MOQ 20 conjuntos', 'Peça de segurança anti-roubo mais vendida']
+    },
+    specs: {
+      'Material': 'Aluminum Alloy Body + Hardened Steel Pin',
+      'Alarm Volume': '110dB Super Loud',
+      'Waterproof': 'IP54',
+      'Battery': 'CR2 3V',
+      'Fit Model': 'Universal for Motorcycles & Scooters',
+      'MOQ': '20 Sets',
+      'Lead Time': '7–15 Working Days',
+      'Trade Term': 'EXW / FOB / CIF / DDP',
+      'Packing Term': 'Standard exporting packaging',
+      'Shipping': 'By sea'
+    },
+    keywords: 'motorcycle disc brake lock, alarm disc lock, anti-theft motorcycle lock, disc lock with alarm, motorcycle security lock, brake disc lock wholesale, China motorcycle lock supplier, 110dB disc lock, IP54 motorcycle lock, scooter disc lock'
   },
 
   /* ================= YFY200GY-12 ================= */
