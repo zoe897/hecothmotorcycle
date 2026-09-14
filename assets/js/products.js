@@ -131,7 +131,7 @@ window.PRODUCTS = {
     icon: 'fa-motorcycle',
     image: 'assets/images/wy150-main.jpg',
     gallery: [
-      'assets/images/wy150-1.jpg',
+      'assets/images/wy150-1.png',
       'assets/images/wy150-2.jpg',
       'assets/images/wy150-3.jpg'
     ],
